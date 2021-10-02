@@ -2,7 +2,7 @@
 	"powers": [
 		"packnamehere:powernamehere"
 	],
-	"icon": "minecraft:BLOCK ID HERE",
+	"icon": "minecraft:barrier",
 	"order": 10,
 	"impact": 0,
 	"name": "NAME HERE",
