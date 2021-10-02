@@ -1,6 +1,6 @@
 {
 	"powers": [
-		"packnamehere:powernamehere"
+		"histo-origins:powernamehere"
 	],
 	"icon": "minecraft:barrier",
 	"order": 10,
