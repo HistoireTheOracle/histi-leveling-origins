@@ -6,6 +6,6 @@
     }  
   },
   "rewards": {
-    "function": "consularsorigins:tick"
+    "function": "histo-origins:tick"
   }
 }
