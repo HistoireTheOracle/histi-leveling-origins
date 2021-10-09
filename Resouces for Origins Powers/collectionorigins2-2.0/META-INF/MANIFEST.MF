@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: collectionorigins2
-Specification-Vendor: collectionorigins2sareus
-Specification-Version: 2
-Implementation-Title: Imperium Origins Collection 2
-Implementation-Version: 2.0
-Implementation-Vendor: collectionorigins2sareus
-Implementation-Timestamp: 2021-07-18T10:44:51+0100
-
