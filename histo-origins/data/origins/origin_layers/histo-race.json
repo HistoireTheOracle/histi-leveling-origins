@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "origins": [
+      "histo-origins:race/human",
+      "histo-origins:race/elf",
+      "histo-origins:race/dwarf",
+      "histo-origins:race/dragonborn",
+      "histo-origins:race/tiefling",
+      "histo-origins:race/halfling",
+      "histo-origins:race/orc",
+      "histo-origins:race/goblin"
+    ]
+  }
+  
