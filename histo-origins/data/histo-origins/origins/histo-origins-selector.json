@@ -3,7 +3,7 @@
 		"histo-origins:race-selection",
 		"histo-origins:leveling-class"
 	],
-	"icon": "minecraft:barrier",
+	"icon": "histo-origins:origin-icons/histo-origin-icon.png",
 	"order": 10,
 	"impact": 3,
 	"name": "Histo's Leveling Origins",
