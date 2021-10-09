@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"histo-origins:powernamehere"
+	],
+	"icon": "histo-origins:origin-icons/tiefling-icon.png",
+	"order": 10,
+	"impact": 1,
+	"name": "Tiefling",
+	"description": "Quite the strange race, born from demons and humans, they are usually mistaken for devils, but can also be compassionate and considerate."
+}
