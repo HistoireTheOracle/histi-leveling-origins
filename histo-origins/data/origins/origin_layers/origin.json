@@ -1,6 +1,6 @@
 {
   "replace": false,
   "origins": [
-    "histo-origins:histo-origin"
+    "histo-origins:histo-origins-selector"
   ]
 }
