@@ -1,1 +1,0 @@
-{"schemaVersion": 1, "authors": ["PeregrinKnight"], "environment": "*", "depends": {"fabric-api-base": "*","minecraft": "1.17.x"}, "name": "SMP Origins", "id": "smporigins", "version": "0.1", "description": "This mod is Based on the SMP origin databack", "license": "All Rights Reserved"}

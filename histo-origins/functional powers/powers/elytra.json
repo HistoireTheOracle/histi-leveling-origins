@@ -1,20 +1,4 @@
 {
-	"type": "origins:elytra_flight",
-	"render_elytra": true,
-	"condition": {
-		"type": "origins:and",
-		"conditions": [
-			{
-				"type": "origins:in_rain",
-				"inverted": true
-			},
-			{
-				"type": "origins:submerged_in",
-				"fluid": "minecraft:water",
-				"inverted": true
-			}
-		]
-	},
-	"name": "Elytra",
-	"description": "You can fly, as long as you are not wet! While you are immune to vertical collisions with the ground, you might not survive a head-on collision with a wall."
+  "type": "origins:elytra_flight",
+  "render_elytra": true
 }

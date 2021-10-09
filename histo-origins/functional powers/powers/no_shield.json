@@ -3,9 +3,7 @@
   "item_condition": {
     "type": "origins:ingredient",
     "ingredient": {
-      "tag": "origins:shields"	
+      "tag": "origins:shields"
     }
-  },
-  "name": "Close Combatant",
-  "description": "You are used to hand to hand combat and have no reason to use Shields with your regenerative ability."
+  }
 }

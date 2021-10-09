@@ -1,8 +1,0 @@
-{
-    "type": "origins:effect_immunity",
-    "name": "Secret Origin #1",
-    "description": "Currently still in Beta...",
-    "effects": [
-        "minecraft:slowness"
-    ]
-}

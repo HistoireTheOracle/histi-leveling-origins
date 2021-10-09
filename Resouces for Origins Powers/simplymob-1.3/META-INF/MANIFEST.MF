@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: simplymob
-Specification-Vendor: simplymobsareus
-Specification-Version: 1.2
-Implementation-Title: forge-1.16.5-36.2.4-mdk (1)
-Implementation-Version: 1.2
-Implementation-Vendor: simplymobsareus
-Implementation-Timestamp: 2021-09-23T10:53:25+0100
-

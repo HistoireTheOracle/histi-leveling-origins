@@ -1,1 +1,0 @@
-{"schemaVersion":1,"environment":"*","depends":{"fabric-api-base":"*","fabric":"*","minecraft":">=1.16.0","origins":">=0.7.0"},"name":"more origins","id":"moreorigins","version":"1.2","description":"more origins are added into the game","license":"Unknown","pack_format":7,"authors":["TopFix"]}
