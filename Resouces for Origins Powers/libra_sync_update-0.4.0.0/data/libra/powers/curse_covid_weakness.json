@@ -1,9 +1,0 @@
-{
-	"type": "origins:modify_damage_dealt",
-	"modifier": {
-		"operation": "multiply_total",
-		"value": -0.25
-	},
-	"name": "DIVOC",
-	"description": "You deal 25% less damage. But have a chance to poison entities around you."
-}

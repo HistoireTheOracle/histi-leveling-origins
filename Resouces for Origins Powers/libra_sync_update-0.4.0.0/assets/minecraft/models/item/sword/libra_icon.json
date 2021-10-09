@@ -1,6 +1,0 @@
-{
-    "parent": "item/bell",
-    "textures": {
-        "layer0": "item/libra_logo"
-    }
-}

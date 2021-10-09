@@ -1,1 +1,0 @@
-{"schemaVersion": 1, "authors": ["Jasel Umena"], "environment": "*", "depends": {"fabric-api-base": "*"}, "name": "Libra", "id": "libra", "version": "0.4.0.0", "description": "Adds Umena's Libra & Canine origins. Requires Origins 1.17 or higher to work.", "license": "All Rights Reserved"}
