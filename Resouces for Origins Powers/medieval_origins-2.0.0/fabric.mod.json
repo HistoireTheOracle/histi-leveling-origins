@@ -1,1 +1,0 @@
-{"schemaVersion": 1, "authors": ["FaZe_Parkie"], "environment": "*", "depends": {"fabric-api-base": "*"}, "name": "Medieval Origins", "id": "medieval_origins", "version": "2.0.0", "description": "Medieval Origins is an addon for the Origins mod, focused on the medieval era, with a slight bit of Greek mythology. It contains 12 new Origins.", "license": "All Rights Reserved"}
