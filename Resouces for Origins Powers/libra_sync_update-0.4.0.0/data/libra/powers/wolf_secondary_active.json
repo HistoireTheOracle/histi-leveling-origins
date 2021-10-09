@@ -1,0 +1,55 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 1200,
+	"hud_render": {
+	  "should_render":true,
+	  "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+	  "bar_index": 1
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+			  "type": "origins:execute_command",
+			  "command": "effect give @e[type=minecraft:wolf,distance=0.1..15] minecraft:strength 15 1 true",
+			  "permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "effect give @e[type=minecraft:wolf,distance=0.1..15] minecraft:speed 15 1 true",
+			  "permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "playsound minecraft:entity.wolf.howl master @a[distance=..15] ~ ~ ~ 2 0.8",
+			  "permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "effect give @p[tag=wolf,distance=0.1..15] minecraft:speed 15 1 true",
+			  "permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "effect give @p[tag=blessed_wolf,distance=0.1..15] minecraft:speed 15 1 true",
+			  "permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "effect give @p[tag=wolf,distance=0.1..15] minecraft:strength 15 1 true",
+			  "permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "effect give @p[tag=blessed_wolf,distance=0.1..15] minecraft:strength 15 1 true",
+			  "permission_level": 4
+			}
+		]
+	},
+	"name": "Howl of War",
+	"description": "[Primary] Temporarily enrages all nearby wolves, granting them additional damage and speed. Nearby canine players will gain increased speed and damage, but not yourself.",
+	"key": {
+		"key":"key.origins.primary_active",
+		"continuous": false
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 300,
+	"hud_render": {
+	  "should_render":true,
+	  "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+	  "bar_index": 23
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [ 
+			{
+			  "type": "origins:execute_command",
+			  "command": "playsound minecraft:entity.cat.hurt master @a[distance=..10] ~ ~ ~ 2 0.7",
+			  "permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "effect give @s minecraft:speed 3 2 true",
+				"permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "resource set @s libra:feline_resource_flipping 1",
+			  "permission_level": 4
+			},
+			{
+				"type": "origins:add_velocity",
+				"z": -0.7,
+				"space": "local"
+			},
+			{
+				"type": "origins:add_velocity",
+				"y": 1,
+				"space": "world"
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "effect give @s minecraft:glowing 1 0 true",
+			  "permission_level": 4
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 20,
+				"action": {
+					"type": "origins:and",
+					"actions": [ 
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:feline_resource_flipping 0",
+						  "permission_level": 4
+						}
+					]
+				}
+			}
+		]
+	},
+	"condition":
+	{
+		"type": "origins:and",
+		"conditions":
+		[
+			{
+			  "type": "origins:on_block",
+			  "inverted": false
+			}
+		]
+	},
+	"name": "Cat flip",
+	"description": "[Secondary] While on the ground, perform an evasive back flip. During the first second after doing this, you won't take any damage.",	
+	"key": {
+		"key":"key.origins.secondary_active",
+		"continuous": false
+	}
+}

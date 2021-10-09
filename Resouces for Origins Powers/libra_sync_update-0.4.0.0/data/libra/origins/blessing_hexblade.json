@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"libra:blessing_luck",
+		"libra:blessing_timer",
+		"libra:blessing_resource_duration",
+		"libra:blessing_death_remove",
+		"libra:blessing_resource_hexblade",
+		"libra:blessing_hexblade_protection",
+		"libra:blessing_hexblade_barrier_hit",
+		"libra:curse_tablet_use"
+	],
+	"icon": {
+		"item": "minecraft:wooden_sword",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+	"name": "Hexblade's Blessing",
+	"description": "For a day, you will negate the first 15 hits you take. Blessings disappear on death, so be careful!"
+}
+//Umena says hi

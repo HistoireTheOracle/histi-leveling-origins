@@ -1,0 +1,32 @@
+{
+	"powers": [
+		"origins:carnivore",
+		"libra:wolf_damage_down",
+		"libra:wolf_health",
+		"libra:libra_wolf_callback",
+		"libra:wolf_taunt",
+		"libra:wolf_pack_attack",
+		"libra:wolf_ticks_alpha",
+		"libra:wolf_bonus_b",
+		"libra:wolf_projectiles",
+		"libra:wolf_upgrade",
+		"libra:wolf_upgrade_diamond",
+		"libra:wolf_upgrade_dire",
+		"libra:wolf_upgrade_greater_dire",
+		"libra:wolf_upgrade_netherite",
+		"libra:wolf_upgrade_self",
+		"libra:wolf_alpha_chestplate",
+		"libra:wolf_primary_active",
+		"libra:wolf_secondary_active"
+	],
+	"icon": {
+		"item": "minecraft:bone",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+  "name": "Libra's Alpha",
+  "description": "A leader to rely on and who can improve its followers."
+}
+//Umena says hi

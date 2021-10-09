@@ -1,0 +1,18 @@
+
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Public Domain"
+
+[[mods]]
+modId="mothorigin"
+version="${file.jarVersion}"
+displayName="Moth Origin"
+logoFile="examplemod.png"
+credits="muddyhues"
+authors="Commander_Why"
+description='''
+This is a forge mod for a Moth Origin
+
+Original creator:
+https://twitter.com/muddyhues
+'''

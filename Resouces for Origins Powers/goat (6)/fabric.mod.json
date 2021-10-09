@@ -1,0 +1,1 @@
+{"schemaVersion":1,"environment":"*","depends":{"fabric-api-base":"*","fabric":"*","minecraft":">=1.16.0","origins":">=0.7.0"},"name":"Goat origin","id":"goat","version":"1.0.0","description":"","license":"Unknown","pack_format":6}

@@ -1,0 +1,20 @@
+{
+  "type": "apoli:active_self",
+  "key": {
+    "key": "key.origins.secondary_active"
+  },
+  "entity_action": {
+    "type": "apoli:spawn_effect_cloud",
+    "radius": 8.0,
+    "effect": {
+      "effect": "minecraft:mining_fatigue",
+      "amplifier": 1,
+      "duration": 600
+    }
+  },
+  "cooldown": 600,
+  "hud_render": {
+    "sprite_location": "moborigins:textures/gui/ability_bars.png",
+    "bar_index": "3"
+  }
+}

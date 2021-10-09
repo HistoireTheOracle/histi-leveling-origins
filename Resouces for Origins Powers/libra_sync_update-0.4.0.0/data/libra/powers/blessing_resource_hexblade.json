@@ -1,0 +1,18 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 15,
+    "start_value": 15,
+	"hidden": true,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 0,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "libra:blessing_resource_hexblade",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    }
+}

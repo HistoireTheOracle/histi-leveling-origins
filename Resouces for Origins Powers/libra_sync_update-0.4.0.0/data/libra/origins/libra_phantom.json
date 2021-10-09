@@ -1,0 +1,24 @@
+{
+	"powers": [
+		"origins:phantomize",
+		"origins:translucent",
+		"origins:phasing",
+		"origins:invisibility",
+		"origins:burn_in_daylight",
+		"origins:hunger_over_time",
+		"origins:fragile",
+		"origins:fall_immunity",
+		"libra:phantom_callback",
+		"libra:phantom_taunt"
+	],
+	"icon": {
+		"item": "minecraft:phantom_membrane",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+  "name": "Libra's Phantom",
+  "description": "Light as a feather!"
+}
+//Umena says hi

@@ -1,0 +1,27 @@
+{
+    "name": "Small",
+    "description": "You are 1 block tall.",
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:base 0.55 @s",
+        "permission_level": 4
+    },
+    "entity_action_respawned": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:base 0.55 @s",
+        "permission_level": 4
+    },
+    "entity_action_added": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:base .55 @s",
+        "permission_level": 4
+    },
+    "entity_action_removed": {
+        "type": "origins:execute_command",
+        "command": "scale reset @s",
+        "permission_level": 4
+    },
+    "hidden": false,
+    "execute_chosen_when_orb": true
+}

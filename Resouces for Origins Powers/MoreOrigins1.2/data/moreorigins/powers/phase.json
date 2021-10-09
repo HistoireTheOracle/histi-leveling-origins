@@ -1,0 +1,151 @@
+{
+    "name": "Infest",
+    "description": "You can go throgh stone, stone like things, and soft blocks",
+    "type": "origins:phasing",
+    "render_type": "blindness",
+    "condition": {
+        "type": "origins:power_active",
+        "power": "moreorigins:phasetoggle"
+    },
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:block",
+                "block": "minecraft:stone"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:sand"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:sandstone"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:red_sand"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:podzol"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:red_sandstone"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:dirt"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:grass_block"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:coarse_dirt"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:rooted_dirt"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:gravel"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:hay_block"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:cobbled_deepslate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:cobblestone"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:stone_bricks"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:mossy_cobblestone"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:cracked_stone_bricks"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:chiseled_stone_bricks"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:mossy_stone_bricks"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:granite"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:diorite"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:andesite"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:mossy_stone_bricks"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:coal_ore"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:iron_ore"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:copper_ore"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:gold_ore"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:redstone_ore"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:emerald_ore"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:lapis_ore"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:diamond_ore"
+            }
+        ]
+    },
+    "view_distance": 75,
+    "phase_down_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:on_block"
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"origins:water_vulnerability",
+		"libra:blazeborn_curse_water_breathing",
+		"libra:curse_bad_luck",
+		"libra:curse_cure",
+		"libra:curse_death_remove",
+		"libra:curse_tablet_use",
+		"libra:curse_tablet_reiteration"
+	],
+	"icon": {
+		"item": "minecraft:magma_cream",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+  "name": "Blazeborn's Curse",
+  "description": "A Libra has cursed you! Water damages you over time, but you gain permanent water breathing."
+}
+//Umena says hi

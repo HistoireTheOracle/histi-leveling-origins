@@ -1,0 +1,16 @@
+{
+    "name": "Heavy Shell",
+    "description": "You are slower than others.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effect": {
+        "effect": "minecraft:slowness",
+        "duration": 1,
+        "amplifier": 2,
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

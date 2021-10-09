@@ -1,0 +1,22 @@
+{
+    "powers": [
+        "simplymob:wolf_speed",
+        "simplymob:wolf_size",
+        "simplymob:wolf_vision",
+        "simplymob:thicked_skinned",
+        "simplymob:wolf_bite",
+        "simplymob:wolf_size2",
+        "origins:more_exhaustion",
+        "simplymob:ears",
+        "origins:carnivore",
+        "simplymob:ghast_health",
+        "origins:no_shield",
+        "simplymob:wolf_sounds"
+
+
+    ],
+    "icon": "minecraft:bone",
+    "impact": 2,
+    "name": "Wolf",
+    "description": "Man's Best Friend."
+}

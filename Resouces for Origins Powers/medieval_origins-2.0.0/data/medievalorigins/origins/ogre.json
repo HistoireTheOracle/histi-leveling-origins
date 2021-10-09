@@ -1,0 +1,18 @@
+{
+	"powers": [
+                "medievalorigins:lead_belly",
+		"medievalorigins:stocky",
+                "medievalorigins:gargantuan",
+                "medievalorigins:gargantuan2",
+                "medievalorigins:ravenous",
+                "medievalorigins:sluggish",
+                "medievalorigins:xxxl",
+                "medievalorigins:unweildy",
+                "medievalorigins:cunning_hidden"  
+	],
+	"icon": "minecraft:wooden_axe",
+	"impact": 3,
+        "order": 3,
+	"name": "Ogre",
+	"description": "Large and impervious brutes, orgres are ferocious creatures with a grand stature. However, their appetite is insatiable, and their stature is just as often a hindrance as it is a help."
+}

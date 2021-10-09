@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_player_spawn",
+    "hidden": false,
+    "name": "Nether Spawn",
+    "description": "You spawn in the nether. ",
+    "spawn_strategy": "default",
+    "dimension": "minecraft:the_nether"
+}

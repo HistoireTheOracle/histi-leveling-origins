@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"origins:elytra",
+		"origins:launch_into_air",
+		"origins:aerial_combatant",
+		"origins:light_armor",
+		"libra:elytrian_gunpowder",
+		"libra:elytrian_paper",
+		"libra:elytrian_callback",
+		"libra:elytrian_steel_wing_trigger",
+		"libra:elytrian_steel_wing_taunt"
+	],
+	"icon": {
+		"item": "minecraft:elytra",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+  "name": "Libra's Elytrian",
+  "description": "Special recipes and less downsides? Yes, please!"
+}
+//Umena says hi

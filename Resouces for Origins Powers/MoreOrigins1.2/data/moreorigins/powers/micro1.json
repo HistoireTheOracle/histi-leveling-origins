@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "name": "Increased exhaustion",
+        "operation": "multiply_base",
+        "value": 1.5
+    },
+    "name": "Hungry",
+    "description": "You lose hunger faster than others."
+}

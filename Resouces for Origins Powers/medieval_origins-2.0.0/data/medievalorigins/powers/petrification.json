@@ -1,0 +1,25 @@
+{
+  "type": "origins:stacking_status_effect",
+  "name": "Petrification",
+  "description": "The gorgons were cursed with being bound in dark, dank caves. Being outside in daylight causes them to become petrified until night.",
+  "min_stacks": 0,
+  "max_stacks": 2,
+  "duration_per_stack": 21,
+  "effects": [
+    {
+    "effect": "minecraft:blindness",
+    "amplifier": 0,
+    "show_particles": false,
+    "show_icon": false
+    },
+    {
+    "effect": "minecraft:slowness",
+    "amplifier": 20,
+    "show_particles": false,
+    "show_icon": false
+    }
+  ],
+  "condition": {
+        "type": "origins:exposed_to_sun"
+      }
+}

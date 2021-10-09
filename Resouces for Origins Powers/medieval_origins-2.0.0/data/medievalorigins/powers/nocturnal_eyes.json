@@ -1,0 +1,20 @@
+{
+  "type": "origins:stacking_status_effect",
+  "name": "Nocturnal Eyes",
+  "description": "Living underground has lead to dwarves having highly sensitive eyes, able to see perfectly fine even in the pitch black of the caverns.",
+  "min_stacks": 0,
+  "max_stacks": 2,
+  "duration_per_stack": 210,
+  "effect": {
+    "effect": "minecraft:night_vision",
+    "is_ambient": true,
+    "amplifier": 2,
+    "show_particles": false,
+    "show_icon": false
+   },
+   "condition": {
+    "type": "origins:brightness",
+    "comparison": "<=",
+    "compare_to": 0.2
+   }
+}

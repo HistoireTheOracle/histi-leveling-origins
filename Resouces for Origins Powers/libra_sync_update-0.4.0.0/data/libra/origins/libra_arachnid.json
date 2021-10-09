@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"origins:climbing",
+		"origins:master_of_webs",
+		"origins:carnivore",
+		"origins:fragile",
+		"origins:arthropod",
+		"libra:arachnid_callback",
+		"libra:arachnid_fangs",
+		"libra:arachnid_disgusting",
+		"libra:arachnid_taunt"
+	],
+	"icon": {
+		"item": "minecraft:cobweb",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+	"name": "Libra's Arachnid",
+	"description": "Not quite the giant enemy spider, but still scary!"
+}
+//Umena says hi

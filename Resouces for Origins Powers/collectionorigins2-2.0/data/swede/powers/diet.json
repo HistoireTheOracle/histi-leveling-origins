@@ -1,0 +1,13 @@
+{
+  "type": "origins:multiple",
+  "maxh": {
+    "type": "origins:attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": -6
+		}
+	},
+  "name": "Unhealthy Diet",
+  "description": "Your diet consisting of mostly meatballs doesnt keep you very healthy. You only have 7 hearts."
+}

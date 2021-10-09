@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"libra:curse_covid_weakness",
+		"libra:covid_curse_timer",
+		"libra:covid_curse_contagion",
+		"libra:curse_bad_luck",
+		"libra:curse_cure",
+		"libra:curse_death_remove",
+		"libra:curse_tablet_use",
+		"libra:curse_tablet_reiteration"
+	],
+	"icon": {
+		"item": "minecraft:zombie_head",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 2,
+	"name": "Divoc's Curse",
+	"description": "A libra has cursed you! You feel sick and sneeze at random. Sneezing on other players or mobs will also make them sick."
+}
+//Umena says hi

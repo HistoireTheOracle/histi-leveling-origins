@@ -1,0 +1,14 @@
+
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Public Domain"
+
+[[mods]]
+modId="collectionorigins2"
+version="2.0"
+displayName="Imperium Origins Collection 2"
+logoFile="examplemod.png"
+authors="Commander_Why"
+description='''
+This is a collection of 5 more of the solo origin mods I have published.
+'''

@@ -1,0 +1,131 @@
+{
+    "type": "origins:active_self",
+    "name": "Dirt Creation ",
+    "description": "With your connection to the earth, you can summon a dirt structure before you.",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:resistance",
+                    "duration": 0,
+                    "amplifier": 0,
+                    "show_icon": false,
+                    "show_particles": false
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace air"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace grass"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace tall_grass"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace water"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace dandelion"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace rose_bush"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace poppy"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace blue_orchid"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace allium"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace azure_bluet"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace red_tulip"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace orange_tulip"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace white_tulip"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace pink_tulip"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace oxeye_daisy"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace cornflower"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace lily_of_the_valley"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace kelp"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace seagrass"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "fill ^3 ^2 ^3 ^-2 ^ ^3 dirt replace snow"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.beacon.power_select"
+            }
+        ]
+    },
+    "cooldown": 165,
+    "key": "primary",
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 21
+    }
+}

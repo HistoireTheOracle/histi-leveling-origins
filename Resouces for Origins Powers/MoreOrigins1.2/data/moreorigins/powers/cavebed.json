@@ -1,0 +1,31 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "It's not dark enough for you to sleep!",
+    "name": "Cavebed",
+    "description": "You must sleep on some form of raw stone.",
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:block",
+                "block": "minecraft:stone"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:diorite"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:cobblestone"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:deepslate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:mossy_cobblestone"
+            }
+        ]
+    }
+}

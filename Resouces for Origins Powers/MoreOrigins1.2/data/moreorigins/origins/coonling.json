@@ -1,0 +1,19 @@
+{
+    "powers": [
+        "moreorigins:leap",
+        "origins:fall_immunity",
+        "moreorigins:fast_by_nature",
+        "moreorigins:jump",
+        "origins:no_shield",
+        "moreorigins:low_racoon_health",
+        "moreorigins:strong_bite",
+        "moreorigins:weak_fur",
+        "moreorigins:coonling_small"
+    ],
+    "icon": "minecraft:sweet_berries",
+    "order": 2,
+    "impact": 1,
+    "name": "Coonling",
+    "description": "Late descendants of the Racoon, the Coonling slowly evolved and became humanoid.",
+    "unchoosable": false
+}

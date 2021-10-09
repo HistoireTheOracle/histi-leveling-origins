@@ -1,0 +1,20 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 20,
+  "cooldown": 100,
+  "effect": {
+    "effect": "minecraft:slow_falling",
+    "duration": 9999,
+    "amplifier": 5,
+    "show_particles": false,
+    "show_icon": false
+  },
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 8
+  },
+  "name": "Gaseous",
+  "description": "You are made mostly of gas, making you extremely lightweight."
+}

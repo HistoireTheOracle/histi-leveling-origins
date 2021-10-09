@@ -1,0 +1,16 @@
+{
+  "type": "apoli:conditioned_attribute",
+  "modifier": {
+    "attribute": "generic.movement_speed",
+    "operation": "addition",
+    "value": 0.145,
+    "name": "strider lava bonus"
+  },
+  "condition": {
+    "type":"apoli:on_block",
+    "block_condition":{
+      "type":"apoli:block",
+      "block":"minecraft:lava"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"type": "origins:burn",
+	"name": "Thermophobia",
+	"description": "As you are used to living in a cold country you do not fare well in warmer climates",
+	"interval": 20,
+	"burn_duration": 1,
+	"condition": {
+		"type": "origins:biome",
+		"condition": {
+			"type": "origins:temperature",
+			"comparison": ">=",
+			"compare_to": 2
+		}
+	}
+}

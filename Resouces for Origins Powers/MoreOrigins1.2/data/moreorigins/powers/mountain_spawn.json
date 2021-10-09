@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_player_spawn",
+    "dimension": "minecraft:overworld",
+    "biome": "minecraft:mountains",
+    "name": "High in the Mountains",
+    "spawn_strategy": "center",
+    "description": "You spawn in the high mountains."
+}

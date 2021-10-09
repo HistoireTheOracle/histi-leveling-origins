@@ -1,0 +1,40 @@
+{
+    "type": "origins:target_action_on_hit",
+    "cooldown": 0,
+    "hud_render": {
+        "should_render": false,
+        "bar_index": 8
+      },
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "effect clear @s",
+				"permission_level": 4
+			},
+			{
+			  "type": "origins:extinguish"
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"comparison": ">=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 4
+			},
+			{
+				"type": "origins:resource",
+				"comparison": "<=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 19
+			}
+		]
+	},
+	"hidden": true
+}
+//Umena says hi

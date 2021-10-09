@@ -1,0 +1,95 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 60,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [ 
+			{
+			  "type": "origins:execute_command",
+			  "command": "playsound minecraft:block.conduit.deactivate master @a[distance=..10] ~ ~ ~ 1 2",
+			  "permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "effect give @s minecraft:nausea 5 0 true",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Tablet of Reiteration\",\"color\":\"red\",\"bold\":false}',Lore:['{\"text\":\"This tablet seems to want\",\"color\":\"white\"}','{\"text\":\"you to get cursed.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:37}}}",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "clear @s minecraft:cobblestone 1",
+				"permission_level": 4
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:glowstone"
+				},
+				"radius": 1,
+				"comparison": ">=",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:polished_blackstone"
+				},
+				"radius": 5,
+				"comparison": ">=",
+				"compare_to": 8
+			},
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:gilded_blackstone"
+				},
+				"radius": 5,
+				"comparison": ">=",
+				"compare_to": 4
+			},
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:polished_blackstone_stairs"
+				},
+				"radius": 5,
+				"comparison": ">=",
+				"compare_to": 12
+			},
+			{    
+			  "type": "origins:fluid_height",
+			  "fluid": "minecraft:water",
+			  "comparison": ">",
+			  "compare_to": 0,
+			  "inverted": false
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": 
+					{
+						"type": "origins:ingredient",
+						"ingredient": 
+							{
+								"item": "minecraft:cobblestone"
+							}
+					}
+			}
+		]
+	},
+	"name": "Reiteration Tablets",
+	"description": "Entering a cursing fountain with cobblestone in your hands will allow you to obtain a curse of reiteration tablet. Using this tablet while cursed will make your curse not disappear on death."
+}

@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"libra:necro/blessing/mana",
+		"libra:necro/blessing/shield_summon",
+		"libra:necro/blessing/evict",
+		"libra:blessing_luck",
+		"libra:blessing_timer",
+		"libra:blessing_resource_duration",
+		"libra:blessing_death_remove",
+		"libra:curse_tablet_use"
+	],
+	"icon": {
+		"item": "minecraft:skeleton_skull",
+		"tag": "{Enchantments:[{}],CustomModelData:2}"
+	},
+	"order": 12,
+	"impact": 3,
+	"name": "Necro's Blessing",
+	"description": "A Libra has Blessed you! Crouch to create shield zombies around you that disappear when you uncrouch! Also, try out BenHotLava's Necromancer datapack!"
+}
+//Ben says hi

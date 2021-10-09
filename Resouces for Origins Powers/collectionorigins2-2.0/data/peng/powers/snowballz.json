@@ -1,0 +1,16 @@
+{
+   "type":"origins:fire_projectile",
+   "cooldown":10,
+   "hud_render":{
+      "bar_index":4
+   },
+   "entity_type":"minecraft:snowball",
+   "sound":"minecraft:entity.phantom.death",
+   "speed":4,
+   "count":6,
+   "divergence":5,
+   "key":"primary",
+   "hidden":false,
+   "name":"Snowball",
+   "description":"Shoot a barrage of snowballs at once using your primary key(G)!"
+}

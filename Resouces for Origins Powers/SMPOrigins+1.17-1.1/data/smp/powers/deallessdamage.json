@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "name": "Less damage dealt",
+        "operation": "addition",
+        "value": -2.0
+    },
+    "condition": {
+        "type": "origins:constant",
+        "value": true
+    },
+    "name": "Doctor’s Allegiance",
+    "description": "You deal 1 heart less damage."
+}

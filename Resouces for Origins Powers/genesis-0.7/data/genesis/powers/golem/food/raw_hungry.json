@@ -1,0 +1,436 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "raw_iron":
+  {
+    "type": "origins:active_self",
+    "cooldown": 40,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s raw_iron 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 2,
+          "saturation": 0.5
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.iron_golem.repair"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "inverted": false,
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient": {
+              "item": "minecraft:raw_iron"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "inverted": false,
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient": {
+              "item": "minecraft:raw_iron"
+            }
+          }
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "raw_gold":
+  {
+    "type": "origins:active_self",
+    "cooldown": 40,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s raw_gold 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 3,
+          "saturation": 0.6
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.iron_golem.repair"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "inverted": false,
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient": {
+              "item": "minecraft:raw_gold"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "inverted": false,
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient": {
+              "item": "minecraft:raw_gold"
+            }
+          }
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "raw_copper":
+  {
+    "type": "origins:active_self",
+    "cooldown": 40,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s raw_copper 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 3,
+          "saturation": 0.2
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.iron_golem.repair"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "inverted": false,
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient": {
+              "item": "minecraft:raw_copper"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "inverted": false,
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient": {
+              "item": "minecraft:gold_ingot"
+            }
+          }
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "raw_iron_block": {
+    "type": "origins:active_self",
+    "cooldown": 100,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s raw_iron_block 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 4,
+          "saturation": 1.5
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.iron_golem.repair"
+        },
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "effect give @s regeneration 20 0"
+        },
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "effect give @s saturation 40 0"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:raw_iron_block"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:raw_iron_block"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "origins:sneaking",
+          "inverted": true
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "raw_copper_block": {
+    "type": "origins:active_self",
+    "cooldown": 100,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s raw_copper_block 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 5,
+          "saturation": 1.8
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.iron_golem.repair"
+        },
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "effect give @s regeneration 10 0"
+        },
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "effect give @s saturation 22 0"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:raw_copper_block"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:raw_copper_block"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "origins:sneaking",
+          "inverted": true
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  },
+
+  "raw_gold_block": {
+    "type": "origins:active_self",
+    "cooldown": 100,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "clear @s raw_gold_block 1"
+        },
+        {
+          "type": "origins:feed",
+          "food": 4,
+          "saturation": 1.5
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.iron_golem.repair"
+        },
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "effect give @s regeneration 20 0"
+        },
+        {
+          "type": "origins:execute_command",
+          "permission_level": 4,
+          "command": "effect give @s saturation 40 0"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:raw_gold_block"
+                }
+              }
+            },
+            {
+              "type": "origins:equipped_item",
+              "inverted": false,
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                  "item": "minecraft:raw_gold_block"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "origins:sneaking",
+          "inverted": true
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 10
+    }
+  }
+}

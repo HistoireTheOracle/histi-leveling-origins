@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "name": "Allure",
+    "description": "Faes are naturally alluring. Unfortunately, this means that mobs will pursue them from far further away than they would other creatures.",
+    "modifier": {
+        "attribute": "minecraft:generic.follow_range",
+        "operation": "addition",
+        "value": 16.0   
+    }
+}

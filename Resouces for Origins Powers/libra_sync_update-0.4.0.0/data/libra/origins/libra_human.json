@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"libra:human_callback",
+		"libra:human_monster_hunter",
+		"libra:human_monster_hunter_projectiles",
+		"libra:human_resilient",
+		"libra:human_health",
+		"libra:human_fast",
+		"libra:human_taunt"
+	],
+	"icon": {
+		"item": "minecraft:player_head",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+  "name": "Human Champion",
+  "description": "10% Cooler than a regular human."
+}
+//Umena says hi

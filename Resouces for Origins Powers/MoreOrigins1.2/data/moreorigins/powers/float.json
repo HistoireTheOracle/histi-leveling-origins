@@ -1,0 +1,34 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:levitation"
+        },
+        "if_action": {
+            "type": "origins:clear_effect",
+            "effect": "minecraft:levitation"
+        },
+        "else_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:levitation",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false,
+                "duration": 10000
+            }
+        }
+    },
+    "cooldown": 0,
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "hud_render": {
+        "should_render": false
+    },
+    "name": "Flight",
+    "description": "You can toggle flight on and off, but watch out, you still take fall damage!"
+}

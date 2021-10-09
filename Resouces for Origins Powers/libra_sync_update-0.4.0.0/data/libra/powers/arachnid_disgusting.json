@@ -1,0 +1,24 @@
+{
+	"type": "origins:attacker_action_when_hit",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:add_velocity",
+				"z": -1,
+				"space": "local"
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "playsound minecraft:entity.spider.hurt master @a[distance=..5] ~ ~ ~ 2 0.7",
+			  "permission_level": 4
+			}
+		]
+	},
+	"cooldown": 0,
+	"hud_render": {
+		"should_render": false
+	},
+  "name": "Creepy Crawly",
+  "description": "You make people who hit you flinch in disgust."
+}

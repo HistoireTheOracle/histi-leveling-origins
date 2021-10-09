@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"libra:curse_villager_melee",
+		"libra:curse_villager_projectiles",
+		"libra:curse_cure",
+		"libra:curse_death_remove",
+		"libra:curse_tablet_use",
+		"libra:curse_tablet_reiteration"
+	],
+	"icon": {
+		"item": "minecraft:stone_hoe",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+  "name": "Villager's Curse",
+  "description": "A Libra has cursed you! You just forgot how to use weapons!"
+}
+//Umena says hi

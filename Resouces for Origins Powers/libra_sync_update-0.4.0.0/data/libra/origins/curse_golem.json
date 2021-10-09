@@ -1,0 +1,30 @@
+{
+  "powers": [
+    "libra:golem/colossus",
+    "libra:golem/food/hungryiron",
+    "libra:golem/heavy",
+    "libra:golem/food/hungrygold",
+    "libra:golem/food/hungrynether",
+    "libra:golem/food/no_food",
+    "libra:golem/food/ironfood",
+    "libra:golem/food/eat_iron_nugget",
+    "libra:golem/food/eat_gold_nugget",
+    "libra:golem/food/eat_scrap",
+    "libra:golem/food/eat_nether_block",
+    "libra:golem/food/eat_iron_block",
+    "libra:golem/food/eat_gold_block",
+	"libra:curse_bad_luck",
+	"libra:curse_cure",
+	"libra:curse_death_remove",
+	"libra:curse_tablet_use",
+	"libra:curse_tablet_reiteration"
+  ],
+	"icon": {
+		"item": "minecraft:netherite_scrap",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+	"name":"Golemborn's curse",
+	"description": "A libra has cursed you! All the way from the Genesis datapack by Phantomere you gain some of the downsides of a golemborn!"
+}

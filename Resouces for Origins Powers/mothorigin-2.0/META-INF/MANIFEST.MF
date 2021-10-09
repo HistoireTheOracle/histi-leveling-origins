@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: mothorigin
+Specification-Vendor: mothoriginsareus
+Specification-Version: 2
+Implementation-Title: Moth Origin
+Implementation-Version: 2.0
+Implementation-Vendor: mothoriginsareus
+Implementation-Timestamp: 2021-07-13T04:30:18+0100
+

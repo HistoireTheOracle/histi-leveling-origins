@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"libra:curse_apply",
+		"libra:curse_reiteration_create",
+		"libra:no_curse_tablet_use"
+	],
+	"icon": {
+		"item": "minecraft:skeleton_skull",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 0,
+	"name": "Not Cursed",
+	"description": "Your ordinary Origins experience. You are perfectly fine and you feel like nothing could possibly go wrong."
+}
+//Umena says hi

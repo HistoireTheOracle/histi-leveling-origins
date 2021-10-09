@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"origins": [
+		"deer:deer",
+		"brute:piglinbrute",
+		"moth:moth",
+		"minotaur:minotaur",
+		"caldera:demon"
+	]
+}

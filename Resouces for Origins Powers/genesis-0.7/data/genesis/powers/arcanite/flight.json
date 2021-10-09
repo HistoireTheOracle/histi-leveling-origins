@@ -1,0 +1,21 @@
+{
+	"type": "origins:elytra_flight",
+	"render_elytra": false,
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "genesis:arcanite/mana",
+				"comparison": ">=",
+				"compare_to": 30
+			},
+			{
+				"type": "origins:advancement",
+				"advancement": "arcanite:master"
+			}
+		]
+	},
+	"name": "§6§nFlight",
+	"description": "§4Conquer the heavens. §f[Master]"
+}

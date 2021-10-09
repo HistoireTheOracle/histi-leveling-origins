@@ -1,0 +1,27 @@
+{
+	"type": "origins:prevent_item_use",
+	"item_condition": {
+		"type": "origins:ingredient",
+		"ingredient": {
+				"tag": "libra:potions"
+			}
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"comparison": ">=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 4
+			},
+			{
+				"type": "origins:resource",
+				"comparison": "<=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 19
+			}
+		]
+	},
+	"hidden": true
+}

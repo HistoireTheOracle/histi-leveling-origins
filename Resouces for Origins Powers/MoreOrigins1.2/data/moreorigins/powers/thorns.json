@@ -1,0 +1,14 @@
+{
+    "type": "origins:attacker_action_when_hit",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 0.5,
+        "source": {
+            "name": "cactus",
+            "bypasses_armor": true
+        }
+    },
+    "cooldown": 0,
+    "name": "Thorns",
+    "description": "You have thorns all over your body, damaging everthing that tries to hit you."
+}

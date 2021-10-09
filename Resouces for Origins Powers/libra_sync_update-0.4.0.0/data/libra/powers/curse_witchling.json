@@ -1,0 +1,111 @@
+{
+	"type": "origins:multiple",
+	"weakness":
+	{
+		"type": "origins:modify_damage_taken",
+		"damage_condition":
+		{
+			"type": "origins:fire"
+		},
+		"modifier":
+		{
+			"operation": "multiply_base",
+			"value": 1.0
+		}
+	},
+	"resource":
+	{
+		"type": "origins:resource",
+		"min": 0,
+		"max": 13,
+		"start_value": 0,
+		"hud_render":
+		{
+			"should_render": false
+		}
+	},
+	"explosion":
+	{
+		"type": "origins:action_over_time",
+		"entity_action":
+		{
+			"type": "origins:if_else",
+			"condition":
+			{
+				"type": "origins:and",
+				"conditions":
+				[
+					{
+						"type": "origins:resource",
+						"resource": "libra:fire_mechanics_resource",
+						"comparison": "==",
+						"compare_to": 0
+					},
+					{
+						"type": "origins:on_fire"
+					}
+				]
+			},
+			"if_action":
+			{
+				"type": "origins:and",
+				"actions":
+				[
+					{
+						"type": "origins:execute_command",
+						"command": "fill ~3 ~2 ~2 ~-3 ~-2 ~-2 minecraft:fire keep",
+						"permission_level": 4
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "fill ~2 ~3 ~2 ~-2 ~-3 ~-2 minecraft:fire keep",
+						"permission_level": 4
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "fill ~2 ~2 ~3 ~-2 ~-2 ~-3 minecraft:fire keep",
+						"permission_level": 4
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "playsound minecraft:item.totem.use player @s ~ ~ ~ 0.5 0.25",
+						"permission_level": 4
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "libra:fire_mechanics_resource",
+						"change": 13
+					},
+					{
+						"type": "origins:if_else",
+						"condition":
+						{
+							"type": "origins:status_effect",
+							"effect": "minecraft:fire_resistance"
+						},
+						"if_action":
+						{
+							"type": "origins:damage",
+							"amount": 3,
+							"source":
+							{
+								"name": "explosion",
+								"bypasses_armor": true,
+								"unblockable": true
+							}
+						}
+					}
+				]
+			},
+			"else_action":
+			{
+				"type": "origins:change_resource",
+				"resource": "libra:fire_mechanics_resource",
+				"change": -1
+			}
+		},
+		"interval": 20
+	},
+	"name": "Infernal Vengeance",
+	"description": "Fire deals double damage, but if you catch on fire, flames erupt around you, burning everything in a 3-block radius."
+}

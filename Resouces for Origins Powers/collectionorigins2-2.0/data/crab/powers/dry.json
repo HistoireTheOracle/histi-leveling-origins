@@ -1,0 +1,15 @@
+{
+    "type": "origins:burn",
+    "name": "Need Wetness",
+    "description": "You can't go in the desert! You're a CRAB.",
+    "interval": 20,
+    "burn_duration": 1,
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+        }
+    }
+}

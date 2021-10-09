@@ -1,0 +1,69 @@
+{
+    "type": "origins:target_action_on_hit",
+	"target_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:entity_type",
+				"entity_type": "minecraft:wolf"
+			}
+		]
+	},
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": false,
+        "bar_index": 24,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png"
+    },
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "playsound minecraft:entity.wolf.whine master @a[distance=..5] ~ ~ ~ 2 2",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "data modify entity @s Attributes[{Name: \"minecraft:generic.armor\"}].Base set value 15",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "data merge entity @s {CollarColor:8}",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "title @p[distance=..5] actionbar {\"text\":\"Equipped!\",\"bold\":true,\"color\":\"gray\"}",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+				"permission_level": 4
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"inverted": false,
+					"ingredient":
+					{
+						"item": "minecraft:iron_chestplate"
+					}
+				}
+			}
+		]
+	},
+	"name": "Pack Upgrades",
+	"description": "Hitting a wolf with an iron armor or diamond chestplate will apply armor to that wolf (15 or 20 armor respectively).[NOTICE]: Armor enchantments have no effect and downgrading wolfs is possible. Wolves will display the last upgrade they got via the color of their collar. Hitting a wolf with a netherite ingot will make it immune to knockback. Finally, hitting a wolf with a golden apple with upgrade it to a dire wolf, while using an enchanted golden apple will make it into an ancient dire wolf."
+}
+//Umena says hi

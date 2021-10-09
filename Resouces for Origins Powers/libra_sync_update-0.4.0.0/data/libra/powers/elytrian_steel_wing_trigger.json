@@ -1,0 +1,56 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 120,
+	"hud_render": {
+	  "should_render":true,
+	  "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+	  "bar_index": 1
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "execute at @s as @e[distance=1..4,type=!#libra:undead] run effect give @s minecraft:instant_damage 1 1 false"
+			}, 
+			{
+				"type": "origins:execute_command",
+				"command": "execute at @s as @e[distance=1..4,type=#libra:undead] run effect give @s minecraft:instant_health 1 1 false"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "function libra:steel_wing",
+				"permission_level": 4
+			}
+		]
+	},
+	"condition":
+	{
+		"type": "origins:and",
+		"conditions":
+		[
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "offhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"inverted": false,
+					"ingredient":
+					{
+						"item": "minecraft:firework_rocket"
+					}
+				}
+			},
+			{
+				"type": "origins:fall_flying"
+			}
+		]
+	},
+	"name": "Steel wing",
+	"description": "Use a firework from your off-hand mid-air in order to cut your enemies with your wings. You only deal damage on the first frame after you use a firework, so timing it is crucial.",
+	"key": {
+		"key":"key.use",
+		"continuous": false
+	}
+}

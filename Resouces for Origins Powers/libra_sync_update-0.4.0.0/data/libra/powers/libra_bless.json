@@ -1,0 +1,831 @@
+{
+    "type": "origins:target_action_on_hit",
+    "cooldown": 6000,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 0,
+        "sprite_location": "libra:textures/gui/libra_cooldown_bar.png"
+    },
+    "entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:arachnid"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_arachnid",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"Your fangs grow...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:avian"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_avian",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"Your arms are wings now...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:blazeborn"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_blazeborn",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"The fire within burns brighter...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:elytrian"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_elytrian",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"You conquered your fears...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "libra:wolf"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_wolf",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"The pack is howling...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:enderian"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_enderian",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"The void calls for you...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:feline"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_feline",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"Your feel revitalized...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:human"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_human",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"You feel like you have a purpose...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:merling"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_merling",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"The storm within you rages...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:phantom"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_phantom",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"Heights are nothing to you...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:shulk"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin libra:libra_shulk",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"Your shell grows larger...\",\"bold\":true,\"color\":\"dark_green\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:arachnid",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:avian",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:blazeborn",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:elytrian",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:enderian",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:feline",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:human",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:merling",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:phantom",
+							"inverted": true
+						},
+						{
+							"type": "origins:origin",
+							"origin": "origins:shulk",
+							"inverted": true
+						}
+					]
+				},
+				"action": {
+					"type": "origins:choice",
+					"actions": [
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_humanity",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"You feel 10% cooler.\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_hexblade",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"A mysterious force protects you.\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_revenant",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"You feel optimistic.\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_constitution",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"You feel tough.\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_dexterity",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"You feel nimble.\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_charisma",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"You feel like a hero.\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_enderian",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"They can't touch this.\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_bladeborn",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"The old ways...\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_sylvan",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"Nature's wisdom...\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:execute_command",
+										"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:curses libra:blessing_necromancer",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "title @s actionbar {\"text\":\"Knowledge of the dead...\",\"bold\":true,\"color\":\"dark_green\"}",
+										"permission_level": 4
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+										"permission_level": 4
+									}
+								]
+							},
+							"weight": 1
+						}
+					]
+				}
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+			  "type": "origins:sneaking",
+			  "inverted": false
+			},
+			{
+				"type": "origins:resource",
+				"comparison": ">=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 4
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"inverted": false,
+					"ingredient":
+					{
+						"item": "minecraft:stick"
+					}
+				}
+			}
+		]
+	},
+	"name": "Bestow Blessing",
+	"description": "Every day, you can bless up to four players by shifting and hitting them with a stick. You can also use this skill to turn a curse into a random blessing. This will max out your balance bar."
+}
+//Umena says hi

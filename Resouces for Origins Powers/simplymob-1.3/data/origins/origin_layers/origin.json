@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "origins":[
+        "simplymob:piglin",
+        "simplymob:strider",
+        "simplymob:ghast",
+        "simplymob:fox",
+        "simplymob:wolf"
+    ]
+}

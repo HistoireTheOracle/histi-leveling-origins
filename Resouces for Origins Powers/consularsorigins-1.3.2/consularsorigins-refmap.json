@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "consular/consularsorigins/mixin/FollowTargetGoalMixin": {
+      "\u003cinit\u003e(Lnet/minecraft/entity/mob/MobEntity;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V": "Lnet/minecraft/class_1400;\u003cinit\u003e(Lnet/minecraft/class_1308;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V"
+    },
+    "consular/consularsorigins/mixin/PiglinBrainMixin": {
+      "wearsGoldArmor": "Lnet/minecraft/class_4838;method_24719(Lnet/minecraft/class_1309;)Z",
+      "onGuardedBlockInteracted": "Lnet/minecraft/class_4838;method_24733(Lnet/minecraft/class_1657;Z)V"
+    },
+    "consular/consularsorigins/mixin/TargetPredicateAccessor": {
+      "predicate": "field_28405:Ljava/util/function/Predicate;"
+    },
+    "consular/consularsorigins/mixin/TrackTargetGoalMixin": {
+      "getFollowRange": "Lnet/minecraft/class_1405;method_6326()D"
+    },
+    "consular/consularsorigins/mixin/PiglinBruteBrainMixin": {
+      "method_30249": "Lnet/minecraft/class_5420;method_30249(Lnet/minecraft/class_5418;Lnet/minecraft/class_4140;)Ljava/util/Optional;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "consular/consularsorigins/mixin/FollowTargetGoalMixin": {
+        "\u003cinit\u003e(Lnet/minecraft/entity/mob/MobEntity;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V": "Lnet/minecraft/class_1400;\u003cinit\u003e(Lnet/minecraft/class_1308;Ljava/lang/Class;IZZLjava/util/function/Predicate;)V"
+      },
+      "consular/consularsorigins/mixin/PiglinBrainMixin": {
+        "wearsGoldArmor": "Lnet/minecraft/class_4838;method_24719(Lnet/minecraft/class_1309;)Z",
+        "onGuardedBlockInteracted": "Lnet/minecraft/class_4838;method_24733(Lnet/minecraft/class_1657;Z)V"
+      },
+      "consular/consularsorigins/mixin/TargetPredicateAccessor": {
+        "predicate": "field_28405:Ljava/util/function/Predicate;"
+      },
+      "consular/consularsorigins/mixin/TrackTargetGoalMixin": {
+        "getFollowRange": "Lnet/minecraft/class_1405;method_6326()D"
+      },
+      "consular/consularsorigins/mixin/PiglinBruteBrainMixin": {
+        "method_30249": "Lnet/minecraft/class_5420;method_30249(Lnet/minecraft/class_5418;Lnet/minecraft/class_4140;)Ljava/util/Optional;"
+      }
+    }
+  }
+}

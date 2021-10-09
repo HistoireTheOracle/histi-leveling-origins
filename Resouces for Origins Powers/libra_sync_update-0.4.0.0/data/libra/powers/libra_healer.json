@@ -1,0 +1,143 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -1
+	},
+	"target_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:in_tag",
+				"tag": "libra:undead",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_tag",
+				"tag": "libra:undead",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_tag",
+				"tag": "libra:evil_bosses",
+				"inverted": true
+			}
+		]
+	},
+	"target_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:in_tag",
+							"tag": "libra:undead",
+							"inverted": true
+						},
+						{
+							"type": "origins:in_tag",
+							"tag": "libra:undead",
+							"inverted": true
+						},
+						{
+							"type": "origins:in_tag",
+							"tag": "libra:evil_bosses",
+							"inverted": true
+						}
+					]
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:heal",
+							"amount": 0.5
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "particle minecraft:heart ~ ~2 ~",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+											  "type": "origins:execute_command",
+											  "command": "playsound minecraft:block.note_block.chime master @a[distance=..5] ~ ~ ~ 2 0.793701",
+											  "permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+											  "type": "origins:execute_command",
+											  "command": "playsound minecraft:block.note_block.chime master @a[distance=..5] ~ ~ ~ 2 1.587401",
+											  "permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+											  "type": "origins:execute_command",
+											  "command": "playsound minecraft:block.note_block.chime master @a[distance=..5] ~ ~ ~ 2 0.594604",
+											  "permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"comparison": ">=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 11
+			},
+			{
+			  "type": "origins:sneaking",
+			  "inverted": true
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"inverted": false,
+					"ingredient":
+					{
+						"item": "minecraft:stick"
+					}
+				}
+			}
+		]
+	},
+	"name": "Balanced Medicine",
+	"description": "When touching others with sticks and not sneaking, you may heal them. \n [GOOD]: Heals all that's not evil or undead. \n [EVIL]: Heals all that's undead or evil."
+}

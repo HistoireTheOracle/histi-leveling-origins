@@ -1,0 +1,34 @@
+{
+"hidden": false,
+"type": "origins:restrict_armor",
+  "head": {
+    "type": "origins:ingredient",
+    "inverted": false,
+    "ingredient": {
+      "item": "minecraft:diamond_helmet"
+    }
+  },
+  "chest": {
+    "type": "origins:ingredient",
+    "inverted": false,
+    "ingredient": {
+      "item": "minecraft:diamond_chestplate"
+    }
+  },
+  "legs": {
+    "type": "origins:ingredient",
+    "inverted": false,
+    "ingredient": {
+      "item": "minecraft:diamond_leggings"
+    }
+  },
+  "feet": {
+    "type": "origins:ingredient",
+    "inverted": false,
+    "ingredient": {
+      "item": "minecraft:diamond_boots"
+    }
+  },
+  "name": "§4Bulky",
+  "description": "Your iron body is thick and can only wear the flexible leather or chainmail armor."
+}

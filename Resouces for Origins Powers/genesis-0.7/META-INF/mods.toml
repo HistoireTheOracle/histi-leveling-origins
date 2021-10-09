@@ -1,0 +1,13 @@
+
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "genesis"
+version = "0.7"
+displayName = "Genesis"
+authors = "Phantomere"
+description = '''
+An Origins Addon that adds five new, unique origins
+'''

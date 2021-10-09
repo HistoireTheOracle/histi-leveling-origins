@@ -1,0 +1,52 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 400,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:chance",
+				"chance": 0.1,
+				"action":{
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "effect give @s minecraft:regeneration 1 5 true",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"comparison": ">=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 19
+			},
+			{
+				"type": "origins:origin",
+				"origin": "libra:curse_none",
+				"layer": "origins:curses",
+				"inverted": true
+			}
+		]
+	},
+	"name": "Good Karma",
+	"description": "When good, take 20% less damage but deal 40% less damage. You have a chance to regenerate for a short moment if you have a blessing or a curse."
+}

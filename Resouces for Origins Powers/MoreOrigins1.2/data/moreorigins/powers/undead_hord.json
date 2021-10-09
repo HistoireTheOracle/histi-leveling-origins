@@ -1,0 +1,57 @@
+{
+    "type": "origins:active_self",
+    "name": "Undead Hoard",
+    "description": "You can summon a hoard of zombies to defend you.",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "summon zombie"
+            }
+        ]
+    },
+    "cooldown": 350,
+    "key": "primary",
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 18
+    }
+}

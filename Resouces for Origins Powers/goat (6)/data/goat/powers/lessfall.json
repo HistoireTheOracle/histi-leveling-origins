@@ -1,0 +1,14 @@
+{
+    "type": "origins:invulnerability",
+    "name": "Brace",
+    "description": "You take no fall damage when sneaking.",
+    "condition": {
+        "type": "origins:sneaking",
+        "inverted": false
+    },
+    "damage_condition": {
+        "type": "origins:name",
+        "inverted": false,
+        "name": "fall"
+    }
+}

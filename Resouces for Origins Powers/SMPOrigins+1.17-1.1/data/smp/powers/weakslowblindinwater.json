@@ -1,0 +1,29 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 20,
+  "effects": [
+  {
+      "effect": "minecraft:blindness",
+      "duration": 11,
+      "amplifier": 1,
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+  },
+  {
+	  "effect": "minecraft:weakness",
+	  "duration": 11,
+	  "is_ambient": true,
+	  "show_particles": false,
+	  "show_icon": false
+  }
+  ],
+  "condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:water"
+  },	     
+    "name": "Hot-blooded",
+    "description": "You are weak and blind in the water."
+}

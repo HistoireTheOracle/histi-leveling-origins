@@ -1,0 +1,26 @@
+{
+	"powers": [
+		"origins:water_vision",
+		"origins:strong_arms",
+		"origins:strong_arms_break_speed",
+		"origins:no_shield",
+		"origins:aquatic",
+		"origins:aqua_affinity",
+		"crab:short_claws",
+		"crab:crabwalkyay",
+                 "crab:beach_spawn",
+                 "crab:dry",
+                 "crab:crabclaw",
+                 "crab:noweapons",
+                 "crab:water_yay",
+                 "crab:shroe",
+                 "crab:shell",
+                 "crab:landbreathe",
+                  "crab:eat"
+    ],
+    "icon": "minecraft:shears",
+    "order": 0,
+    "impact": 2,
+	"name": "Crab",
+	"description": "Crustaceans who like to rave."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 20,
+  "effect": {
+    "effect": "minecraft:water_breathing",
+    "amplifier": 1,
+    "show_particles": false,
+    "is_ambient": true
+  },
+  "condition": {
+    "type": "origins:submerged_in",
+    "fluid": "minecraft:water"
+  },
+  "name": "Both Breathe",
+  "description": "You can breathe both underwater and on land."
+}

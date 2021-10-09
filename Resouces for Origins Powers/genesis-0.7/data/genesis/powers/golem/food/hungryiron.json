@@ -1,0 +1,64 @@
+{
+  "type": "origins:active_self",
+  "name": "§9Ferrivore",
+  "description": "You can only eat metal items, including golden food, nuggets, scraps, and blocks. Eating blocks, especially netherite, will give you extra buffs. (Sneak to not eat while placing)",
+  "hidden": false,
+  "cooldown": 40,
+  "key": {
+    "key": "key.use",
+    "continuous": true
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "permission_level": 4,
+        "command": "clear @s iron_ingot 1"
+      },
+      {
+        "type": "origins:feed",
+        "food": 4,
+        "saturation": 1.6
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.iron_golem.repair"
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "inverted": false,
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "inverted": false,
+          "ingredient": {
+            "item": "minecraft:iron_ingot"
+          }
+        }
+      },
+      {
+        "type": "origins:equipped_item",
+        "inverted": false,
+        "equipment_slot": "offhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "inverted": false,
+          "ingredient": {
+            "item": "minecraft:iron_ingot"
+          }
+        }
+      }
+    ]
+  },
+  "hud_render": {
+    "should_render": false,
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 10
+  }
+}

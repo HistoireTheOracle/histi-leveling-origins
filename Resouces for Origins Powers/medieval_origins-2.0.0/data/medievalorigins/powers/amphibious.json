@@ -1,0 +1,19 @@
+{
+  "type": "origins:stacking_status_effect",
+  "name": "Amphibious",
+  "description": "Sirens, being a subset of merpeople, can survive in water, and swim with increased speed.",
+  "min_stacks": 0,
+  "max_stacks": 2,
+  "duration_per_stack": 21,
+  "effect": {
+    "effect": "minecraft:dolphins_grace",
+    "is_ambient": true,
+    "amplifier": 0,
+    "show_particles": false,
+    "show_icon": false
+  },
+  "condition": {
+         "type": "origins:submerged_in",
+         "fluid": "minecraft:water"
+      }
+}

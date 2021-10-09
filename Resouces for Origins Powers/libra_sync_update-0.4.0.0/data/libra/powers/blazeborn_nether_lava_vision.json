@@ -1,0 +1,18 @@
+{	
+	"type": "origins:lava_vision",
+	"s": 0,
+	"v": 30,
+	"name": "Lava vision",
+	"description": "Lava does not impair your vision as much, but you lose vision over time.",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"comparison": ">",
+				"resource": "libra:blazeborn_resource_hover",
+				"compare_to": 0
+			}
+		]
+	}
+}

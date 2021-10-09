@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"libra:blessing_luck",
+		"libra:blessing_timer",
+		"libra:blessing_resource_duration",
+		"libra:blessing_death_remove",
+		"libra:blessing_humanity_damage",
+		"libra:blessing_humanity_damage_projectile",
+		"libra:blessing_humanity_health",
+		"libra:blessing_humanity_resistance",
+		"libra:blessing_humanity_speed",
+		"libra:curse_tablet_use"
+	],
+	"icon": {
+		"item": "minecraft:golden_apple",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+	"name": "Human's Blessing",
+	"description": "For a day, you gain 10% more damage, damage resistance, movement speed and maximum health. Blessings disappear on death, so be careful!"
+}
+//Umena says hi

@@ -1,0 +1,6 @@
+{
+    "type": "origins:entity_group",
+    "group": "undead",
+    "name": "Zombie Like",
+    "description": "You are damaged by Potions of Healing, healed by Potions of Harming, Smiting weapons do more damage, and you can't drown... because you don't have lungs."
+}

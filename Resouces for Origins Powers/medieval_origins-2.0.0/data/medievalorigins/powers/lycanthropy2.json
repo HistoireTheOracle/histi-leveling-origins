@@ -1,0 +1,14 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "scale set pehkui:base 1.1",
+                "permission_level": 4
+                },
+	"condition": {
+		"type": "origins:exposed_to_sun",
+		"inverted": true
+	},
+        "hidden": true,
+        "interval": 100
+}

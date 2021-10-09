@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_callback",
+    "name": "Towering",
+    "description": "Elves are substantially taller than the average human. Despite this, they are just as skinny...",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:height 1.2",
+        "permission_level": 4
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scale reset pehkui:height",
+        "permission_level": 4
+    },
+    "execute_chosen_when_orb": true
+}

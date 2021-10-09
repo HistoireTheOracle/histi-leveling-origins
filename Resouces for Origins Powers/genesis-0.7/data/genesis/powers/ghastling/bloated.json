@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.max_health",
+    "operation": "addition",
+    "value": "-6"
+  },
+  "name": "Bloated",
+  "description": "Your predecessors were large balls of gas. You inherited some of that."
+}

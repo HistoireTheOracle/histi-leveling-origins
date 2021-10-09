@@ -1,0 +1,20 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_total",
+        "value": 0.2
+    },
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"comparison": "<=",
+				"resource": "libra:libra_resource_balance",
+				"compare_to": 3
+			}
+		]
+	},
+	"hidden": true
+}

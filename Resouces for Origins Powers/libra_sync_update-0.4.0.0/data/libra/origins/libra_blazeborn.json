@@ -1,0 +1,31 @@
+{
+	"powers": [
+		"origins:fire_immunity",
+		"origins:nether_spawn",
+		"origins:burning_wrath",
+		"origins:hotblooded",
+		"origins:water_vulnerability",
+		"origins:flame_particles",
+		"origins:damage_from_snowballs",
+		"origins:damage_from_potions",
+		"libra:blazeborn_callback",
+		"libra:blazeborn_resource_hover",
+		"libra:blazeborn_resource_hovering",
+		"libra:blazeborn_hover_ticks",
+		"libra:blazeborn_hover_hop",
+		"libra:blazeborn_burnt_wrath",
+		"libra:blazeborn_nether_swim",
+		"libra:blazeborn_nether_lava_vision",
+		"libra:blazeborn_taunt"
+	],
+	"icon": {
+		"item": "minecraft:blaze_powder",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+  "name": "Libra's Blazeborn",
+  "description": "The real hot stuff."
+}
+//Umena says hi

@@ -1,0 +1,36 @@
+{
+    "type": "origins:active_self",
+    "name": "Warp",
+    "description": "Use the powers of the void to warp yourself 5 blocks away.",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:resistance",
+                    "duration": 0,
+                    "amplifier": 0,
+                    "show_icon": false,
+                    "show_particles": false
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "tp @s ^ ^1 ^5"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.beacon.power_select"
+            }
+        ]
+    },
+    "cooldown": 50,
+    "key": "primary",
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 8
+    }
+}

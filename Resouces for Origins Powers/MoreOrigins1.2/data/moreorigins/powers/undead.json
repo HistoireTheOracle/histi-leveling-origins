@@ -1,0 +1,95 @@
+{
+    "type": "origins:multiple",
+    "name": "Undead",
+    "description": "Being a creature in the ranks of the undead, you're naturally passive towards all undead.",
+    "uundeadnow": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "team add Undead",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @s",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "team leave @s",
+            "permission_level": 4
+        }
+    },
+    "undeadundeadnow": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "team leave @e[tag=hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:zombie,tag=!hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:cave_spider,tag=!hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:spider,tag=!hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:creeper,tag=!hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:skeleton,tag=!hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:husk,tag=!hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:drowned,tag=!hateunow]",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join Undead @e[type=minecraft:stray,tag=!hateunow]",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "interval": 20
+    },
+    "umesswithundeadugetundead": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s[team=Undead,type=!minecraft:player] add hateunow",
+            "permission_level": 4
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "hidden": false
+}

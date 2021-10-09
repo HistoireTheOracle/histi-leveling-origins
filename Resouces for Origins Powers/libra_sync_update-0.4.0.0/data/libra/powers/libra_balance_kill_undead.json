@@ -1,0 +1,31 @@
+{
+	"type": "origins:self_action_on_kill",
+	"target_condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:in_tag",
+				"tag": "libra:undead"
+			},
+			{
+				"type": "origins:in_tag",
+				"tag": "libra:evil_creatures"
+			}
+		]
+	},
+	"entity_action": {
+		"type": "origins:and",
+        "actions": [
+			{
+				"type": "origins:change_resource",
+				"resource": "libra:libra_resource_balance",
+				"change": 1
+			}
+		]
+	},
+	"cooldown": 0,
+	"hud_render": {
+		"should_render": false
+	},
+	"hidden": true
+}

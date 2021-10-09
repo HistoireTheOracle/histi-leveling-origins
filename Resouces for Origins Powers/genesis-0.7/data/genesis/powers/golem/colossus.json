@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.movement_speed",
+    "operation": "addition",
+    "value": "-0.03"
+  },
+  "name": "§9Colossus",
+  "description": "Your body is larger, weighing you down, but also giving you strength."
+}

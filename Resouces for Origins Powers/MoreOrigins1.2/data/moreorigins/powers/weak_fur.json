@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.05
+    },
+    "name": "Bad Bones",
+    "description": "You take more damage from all forms of attack."
+}

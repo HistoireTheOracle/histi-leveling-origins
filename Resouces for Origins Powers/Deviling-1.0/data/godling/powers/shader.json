@@ -1,0 +1,12 @@
+{
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/wobble.json",
+    "condition": {
+        "type": "origins:power_active",
+        "inverted": false,
+        "power": "godling:shader_toggle"
+    },
+    "hidden": false,
+    "name": "Eyes of the Devil",
+    "description": "Using your secondary you are able to view the world in a more red tone. "
+}

@@ -1,0 +1,13 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -1
+	},
+	"target_condition": {
+		"type": "origins:in_tag",
+		"tag": "libra:passive"
+	},
+	"name": "Prideful",
+	"description": "You can't deal damage to passive mobs due to your large ego."
+}

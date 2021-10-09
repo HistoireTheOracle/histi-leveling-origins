@@ -1,0 +1,19 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": 8,
+        "name": "Increased health on Diamond Blocks"
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+	      "type": "origins:block",
+	      "block": "minecraft:diamond_block"
+        }
+    },
+    "hidden": true
+
+}

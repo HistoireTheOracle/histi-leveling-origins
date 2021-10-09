@@ -1,0 +1,25 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": -15,
+  "max_stacks": 15,
+  "duration_per_stack": 10,
+  "cooldown": 100,
+  "effect": {
+    "effect": "minecraft:slowness",
+    "amplifier": 0.7,
+    "show_particles": false,
+    "show_icon": false
+  },
+  "hud_render": {
+    "should_render": false,
+    "bar_index": 8
+  },
+  "condition": {
+    "type": "origins:block_collision",
+    "offset_y": "-1",
+    "offset_x": "0",
+    "offset_z": "0"
+  },
+  "name": "§4§nLove of the Skies",
+  "description": "You get slowness on the ground, as you are more accustomed to your wings."
+}

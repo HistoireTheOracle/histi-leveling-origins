@@ -1,0 +1,32 @@
+{
+    "type": "origins:damage_over_time",
+    "interval": 20,
+    "onset_delay": 1,
+    "damage": 2,
+    "damage_easy": 1,
+    "damage_source": {
+        "name": "inWall",
+        "unblockable": true,
+        "bypasses_armor": true
+    },
+    "protection_enchantment": "minecraft:respiration",
+    "protection_effectiveness": 1.0,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": "<",
+				"compare_to": 1.75,
+				"inverted": false
+			},
+            {
+				"type": "origins:air",
+				"comparison": "<=",
+				"compare_to": 5
+            }
+        ]
+    },
+"hidden": true
+}

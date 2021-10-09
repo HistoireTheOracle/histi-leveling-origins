@@ -1,0 +1,17 @@
+{
+	"name": "Wolf Size",
+    "description": "You are a wolf, therefore you are smaller than the average player.",
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+	  "type": "origins:execute_command",
+	  "command": "scale set pehkui:height .85 @s",
+	  "permission_level": 4
+	},
+	"entity_action_respawned": {
+	  "type": "origins:execute_command",
+	  "command": "scale set pehkui:height .85 @s",
+	  "permission_level": 4
+	},
+	"execute_chosen_when_orb": true
+  
+}

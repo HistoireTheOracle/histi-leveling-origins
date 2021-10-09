@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.armor",
+    "operation": "addition",
+    "value": "8"
+  },
+    "name": "§2§nDragon Scales",
+    "description": "You skin is thick, giving you natural protection."
+}

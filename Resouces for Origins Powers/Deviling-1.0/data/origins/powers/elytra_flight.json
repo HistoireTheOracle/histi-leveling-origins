@@ -1,0 +1,7 @@
+{
+    "type": "origins:elytra_flight",
+    "hidden": false,
+    "render_elytra": false,
+    "name": "Gift of flight",
+    "description": "You have the ability to fly as if you are using an elytra, but there is no elytra. "
+}

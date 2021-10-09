@@ -1,0 +1,12 @@
+{
+    "powers": [
+	    "smp:timestop",
+        "smp:slowimmune"
+
+    ],
+    "icon": "minecraft:clock",
+    "order": 10,
+    "impact": 3,
+    "name": "The World",
+    "description": "Za warudo!"
+}

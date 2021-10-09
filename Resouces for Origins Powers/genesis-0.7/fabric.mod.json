@@ -1,0 +1,1 @@
+{"schemaVersion": 1, "authors": ["Phantomere"], "environment": "*", "depends": {"fabric-api-base": "*"}, "name": "Genesis", "id": "genesis", "version": "0.7", "description": "An Origins Addon that adds five new, unique origins", "license": "All Rights Reserved"}

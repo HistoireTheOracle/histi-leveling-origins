@@ -1,0 +1,24 @@
+{
+    "powers": [
+        "simplymob:berry_buff",
+        "simplymob:berrybush_nodmg",
+        "simplymob:fox_sounds",
+        "simplymob:fox_speed",
+        "simplymob:fox_leap",
+        "simplymob:fox_mouth",
+        "origins:fall_immunity",
+        "simplymob:fox_size",
+        "simplymob:fox_size2",
+        "origins:no_shield",
+        "simplymob:fox_den",
+        "origins:more_exhaustion",
+        "simplymob:ears",
+        "simplymob:ghast_health"
+
+
+    ],
+    "icon": "minecraft:sweet_berries",
+    "impact": 1,
+    "name": "Fox",
+    "description": "Stunning Creature, small, Cuddly, Cute. Minus the Screaming."
+}

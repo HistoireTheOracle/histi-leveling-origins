@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"origins": [
+		"beetle:beetle",
+		"crab:crab",
+		"peng:penguinborn",
+		"swede:swedish",
+		"shadekin:shade"
+	]
+}

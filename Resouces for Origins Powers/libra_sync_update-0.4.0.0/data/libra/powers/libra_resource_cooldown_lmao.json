@@ -1,0 +1,18 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 20,
+    "start_value": 0,
+    "hidden": true,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 3,
+        "sprite_location": "libra:textures/gui/libra_cooldown_bar.png",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "libra:libra_resource_cooldown_lmao",
+            "comparison": "<",
+            "compare_to": 20
+        }
+    }
+}

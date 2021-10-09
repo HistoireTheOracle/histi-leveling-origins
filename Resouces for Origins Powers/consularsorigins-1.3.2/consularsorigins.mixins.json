@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "consular.consularsorigins.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "FollowTargetGoalMixin",
+    "PiglinBrainMixin",
+    "PiglinBruteBrainMixin",
+    "TargetPredicateAccessor",
+    "TrackTargetGoalMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "consularsorigins-refmap.json"
+}

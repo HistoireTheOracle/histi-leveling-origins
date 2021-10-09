@@ -1,0 +1,196 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 0,
+	"hud_render": {
+	  "should_render":false,
+	  "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+	  "bar_index": 1
+	},
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:resource",
+							"comparison": ">=",
+							"resource": "libra:libra_resource_balance",
+							"compare_to": 20
+						},
+						{
+							"type": "origins:resource",
+							"comparison": "==",
+							"resource": "libra:libra_resource_cooldown_lmao",
+							"compare_to": 20
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+						  "type": "origins:execute_command",
+						  "command": "effect give @e[distance=1..7,type=!#libra:evil_creatures] minecraft:instant_health 1 1 true",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "playsound minecraft:block.conduit.ambient master @a[distance=..10] ~ ~ ~ 2 2",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "function libra:libra_healing",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:change_resource",
+							"resource": "libra:libra_resource_cooldown_lmao",
+							"change": -20
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 1,
+							"action": {
+								"type": "origins:change_resource",
+								"resource": "libra:libra_resource_cooldown_lmao",
+								"change": 5
+							}
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:resource",
+							"comparison": "<=",
+							"resource": "libra:libra_resource_balance",
+							"compare_to": 19
+						},
+						{
+							"type": "origins:resource",
+							"comparison": "==",
+							"resource": "libra:libra_resource_cooldown_lmao",
+							"compare_to": 20
+						},
+						{
+							"type": "origins:resource",
+							"comparison": ">=",
+							"resource": "libra:libra_resource_balance",
+							"compare_to": 4
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+						  "type": "origins:execute_command",
+						  "command": "playsound minecraft:entity.firework_rocket.blast master @a[distance=..5] ~ ~ ~ 2 1",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "effect clear @e[distance=..5]",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "particle flash",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 1,
+							"action": {
+							  "type": "origins:apply_effect",
+							  "effect": {
+								"effect": "minecraft:fire_resistance",
+								"amplifier": 1,
+								"duration": 200
+							  }
+							}
+						},
+						{
+							"type": "origins:change_resource",
+							"resource": "libra:libra_resource_cooldown_lmao",
+							"change": -20
+						},
+						{
+						  "type": "origins:extinguish"
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:resource",
+							"comparison": "<=",
+							"resource": "libra:libra_resource_balance",
+							"compare_to": 3
+						},
+						{
+							"type": "origins:resource",
+							"comparison": "==",
+							"resource": "libra:libra_resource_cooldown_lmao",
+							"compare_to": 20
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+						  "type": "origins:execute_command",
+						  "command": "playsound minecraft:entity.enderman.teleport master @a[distance=..20] ~ ~ ~ 2 1.3",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "execute at @e[type=!item,sort=nearest,limit=1,distance=1..20] run tp @s ^ ^ ^-2 facing entity @e[type=!item,sort=nearest,limit=1,distance=..20]",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "effect give @s minecraft:slow_falling 5 0 true",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:change_resource",
+							"resource": "libra:libra_resource_timer",
+							"change": 1
+						},
+						{
+							"type": "origins:change_resource",
+							"resource": "libra:libra_resource_cooldown_lmao",
+							"change": -20
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 30,
+							"action": {
+								"type": "origins:change_resource",
+								"resource": "libra:libra_resource_timer",
+								"change": -1
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+	"name": "Manifest Alignment",
+	"description": "[Primary] Depending on your balance meter, your primary can have three different effects. \n \n [GOOD]: Heal nearby non-evil entities, harm undead. Get 25% of your cooldown back. \n \n [NEUTRAL]: Cleanses everyone's potion effects around you and gives you fire resistance for a brief moment. \n \n [EVIL]: Teleport behind the nearest mob or player and gain additional damage for a second, and if you kill anything, you get your cooldown back. \n",
+	"key": {
+		"key":"key.origins.primary_active",
+		"continuous": false
+	}
+}

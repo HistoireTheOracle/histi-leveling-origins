@@ -1,0 +1,17 @@
+{
+    "impact": 2,
+    "unchoosable": false,
+    "name": "Deviling",
+    "description": "As a deviling you gain the ability to fly. You take slightly less damage and you need access to the nether or end dimension to survive. ",
+    "icon": "minecraft:netherrack",
+    "powers": [
+        "origins:elytra_flight",
+        "origins:more_kinetic_damage",
+        "origins:launch",
+        "godling:nether_burn",
+        "godling:shader",
+        "godling:shader_toggle",
+        "godling:health",
+        "deviling:nether_spawn"
+    ]
+}

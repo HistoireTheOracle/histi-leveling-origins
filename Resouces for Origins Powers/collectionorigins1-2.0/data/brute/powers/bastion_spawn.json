@@ -1,0 +1,8 @@
+{
+  "type": "origins:modify_player_spawn",
+  "dimension": "minecraft:the_nether",
+  "structure": "minecraft:bastion_remnant",
+  "spawn_strategy": "center",
+  "name": "Bastion Spawn",
+  "description": "As a piglin brute, your spawn is within a Bastion Remnant"
+}

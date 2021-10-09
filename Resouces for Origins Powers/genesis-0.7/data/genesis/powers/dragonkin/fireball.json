@@ -1,0 +1,16 @@
+{
+  "type": "origins:fire_projectile",
+  "entity_type": "minecraft:fireball",
+  "count": "1",
+  "speed": "1.5",
+  "divergence": "1.0",
+
+  "cooldown": 80,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 7
+    },
+
+  "key": "primary",
+  "hidden": true
+}

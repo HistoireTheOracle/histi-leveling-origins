@@ -1,0 +1,19 @@
+{
+  "type": "origins:modify_damage_taken",
+  "name": "Magic Prone",
+  "description": "With high physical damage resistance, it is only natural that attacks of a more spectral nature have increased effects on knights.",
+  "damage_condition": {
+      "type": "origins:attacker",
+      "condition": {
+          "type": "entity_group",
+          "entity_group": {
+             "tag": "medievalorigins:magic_mobs"
+             }
+       }
+    },
+    "modifier": {
+        "name": "weak to magic",
+        "operation": "addition",
+        "value": 2.5
+    }
+}

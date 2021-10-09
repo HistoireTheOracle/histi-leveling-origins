@@ -1,0 +1,19 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 25,
+    "start_value": 0,
+    "name": "Aerial Maneouvers",
+    "description": "[Secondary] Hover in place for a short period of time. Shift to cancel. Recharges while on the ground.",
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 4,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "libra:blazeborn_resource_hover",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    }
+}

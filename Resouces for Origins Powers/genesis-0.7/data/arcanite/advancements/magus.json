@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Magus",
+            "color": "dark_green",
+            "italic": false
+        },
+        "description": {
+            "text": "Reach Level 20 and Harness Death"
+        },
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "arcanite:adept"
+}

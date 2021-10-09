@@ -1,0 +1,6 @@
+{
+	"type": "origins:shader",
+	"shader": "minecraft:shaders/post/desaturate.json",
+	"name": "Dog vision",
+	"description": "[If this power bothers you way too much, you can turn it off by pressing F4] You have trouble telling colors apart."
+}

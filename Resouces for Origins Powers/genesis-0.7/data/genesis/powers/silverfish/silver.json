@@ -1,0 +1,91 @@
+{
+	"type": "origins:multiple",
+	"name": "§4§nOxidize",
+	"description": "If you are outside of stone for too long, your body begins to deteriorate.",
+
+	"silver_decay": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "genesis:silverfish/silver_resource",
+			"change": -1
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "genesis:burrow_blocks"
+			},
+			"inverted": true,
+			"comparison": ">",
+			"compare_to": 1
+		}
+	},
+	"silver_restore": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "genesis:silverfish/silver_resource",
+			"change": 2
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "genesis:burrow_blocks"
+			},
+			"comparison": ">",
+			"compare_to": 1
+		}
+	},
+	"silver_reset": {
+		"type": "origins:action_on_callback",
+		"entity_action_respawned": {
+			"type": "origins:change_resource",
+			"resource": "genesis:silverfish/silver_resource",
+			"change": 175
+		}
+	},
+
+	"silver_debuff_one": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 10,
+		"duration_per_stack": 30,
+		"effect": {
+				"effect": "minecraft:slowness",
+				"amplifier": 1,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "genesis:silverfish/silver_resource",
+			"comparison": "<=",
+			"compare_to": 65
+		}
+	},
+
+	"silver_debuff_two": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 10,
+		"duration_per_stack": 20,
+		"effect": {
+			"effect": "minecraft:weakness",
+			"amplifier": 0,
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "genesis:silverfish/silver_resource",
+			"comparison": "<=",
+			"compare_to": 25
+		}
+	}
+}

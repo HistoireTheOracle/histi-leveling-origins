@@ -1,0 +1,19 @@
+{
+  "type": "origins:stacking_status_effect",
+  "name": "Holy Water",
+  "description": "Sirens have regenerative powers, which are at full force when they are in water.",
+  "min_stacks": 0,
+  "max_stacks": 2,
+  "duration_per_stack": 21,
+  "effect": {
+    "effect": "minecraft:regeneration",
+    "is_ambient": true,
+    "amplifier": 0,
+    "show_particles": false,
+    "show_icon": false
+  },
+  "condition": {
+         "type": "origins:submerged_in",
+         "fluid": "minecraft:water"
+      }
+}

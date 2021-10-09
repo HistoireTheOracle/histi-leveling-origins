@@ -1,0 +1,58 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": 4,
+        "name": "Increased health with Diamond Armor"
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+	{
+	    "type": "origins:equipped_item",
+	    "equipment_slot": "head",
+	    "item_condition": {
+	        "type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:diamond_helmet"
+			}
+
+	    }
+	},
+	{
+	    "type": "origins:equipped_item",
+	    "equipment_slot": "chest",
+	    "item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:diamond_chestplate"
+			}
+		}
+	},
+	{
+	    "type": "origins:equipped_item",
+	    "equipment_slot": "legs",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:diamond_leggings"
+			}
+		}
+	},
+	{
+	    "type": "origins:equipped_item",
+	    "equipment_slot": "feet",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:diamond_boots"
+			}
+		}
+	}
+        ]
+    },
+    "name": "Diamond Origins",
+    "description": "Wearing Diamond armor gives you some extra health."
+}

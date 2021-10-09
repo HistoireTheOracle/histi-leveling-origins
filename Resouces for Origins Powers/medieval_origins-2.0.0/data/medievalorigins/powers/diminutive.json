@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_callback",
+    "name": "Diminuitve",
+    "description": "It is rare for a fae to break 5 feet in height. They are small creatures, even smaller than the weaselly goblins.",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:base 0.66",
+        "permission_level": 4
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scale reset pehkui:base",
+        "permission_level": 4
+    },
+    "execute_chosen_when_orb": true
+}

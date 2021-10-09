@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"libra:blessing_luck",
+		"libra:blessing_timer",
+		"libra:blessing_resource_duration",
+		"libra:blessing_revenant",
+		"libra:curse_tablet_use"
+	],
+	"icon": {
+		"item": "minecraft:soul_campfire",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+	"name": "Revenant's Blessing",
+	"description": "For a day, you will revive with full health the first time you die. Blessings disappear on death, so be careful!"
+}
+//Umena says hi

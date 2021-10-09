@@ -1,0 +1,231 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 20,
+	"hud_render": {
+	  "should_render":false,
+	  "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+	  "bar_index": 1
+	},
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 37
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:or",
+							"conditions": [
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_arachnid",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_avian",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_blazeborn",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_covid",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_dwarf",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_elytrian",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_feline",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_giant",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_golem",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_libra",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_merling",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_myconoid",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_nature",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_phantom",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_pride",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_shulk",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_villager",
+									"inverted": false
+								},
+								{
+									"type": "origins:origin",
+									"layer": "origins:curses",
+									"origin": "libra:curse_witchling",
+									"inverted": false
+								}
+							]
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "power remove @s libra:curse_death_remove",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 37} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"red\"}",
+									"permission_level": 4
+								},
+								{
+									"type": "origins:execute_command",
+									"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+									"permission_level": 4
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	},
+	"condition":
+	{
+		"type": "origins:and",
+		"conditions":
+		[
+			{
+				"type": "origins:origin",
+				"origin": "libra:libra",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking"
+			}
+		]
+	},
+	"hidden": true,	
+	"key": {
+		"key":"key.use",
+		"continuous": false
+	}
+}

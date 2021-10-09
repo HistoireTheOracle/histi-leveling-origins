@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Adept",
+            "color": "blue",
+            "italic": false
+        },
+        "description": {
+            "text": "Reach Level 10 and Learn to Wield the Skies"
+        },
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "arcanite:acolyte"
+}

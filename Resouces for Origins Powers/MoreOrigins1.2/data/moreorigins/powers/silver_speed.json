@@ -1,0 +1,9 @@
+{
+    "type": "origins:attribute",
+    "hidden": false,
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.055,
+        "operation": "addition"
+    }
+}

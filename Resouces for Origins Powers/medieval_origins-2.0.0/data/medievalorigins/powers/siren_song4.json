@@ -1,0 +1,10 @@
+{
+  "type": "origins:self_action_on_hit",
+  "hidden": true,
+  "entity_action": {
+		"type": "origins:execute_command",
+                "command": "/team leave @e[type=!minecraft:player]",
+                "permission_level": 4
+                },
+  "cooldown": 20
+}

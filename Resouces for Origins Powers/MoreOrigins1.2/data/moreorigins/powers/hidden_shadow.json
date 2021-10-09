@@ -1,0 +1,52 @@
+{
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "no_armor": {
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_render_armor",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:brightness",
+                            "comparison": "<",
+                            "compare_to": 0.25
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:exposed_to_sky"
+                                },
+                                {
+                                    "type": "origins:daytime",
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "name": "Shadows Cover",
+    "description": "Due to your dark nature, you can completely hide your body in the shadows."
+}

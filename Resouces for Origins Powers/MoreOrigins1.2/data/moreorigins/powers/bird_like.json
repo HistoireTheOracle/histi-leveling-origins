@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_damage_taken",
+    "name": "Bird Like",
+    "description": "You take more damage from arrows",
+    "hidden": true,
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "minecraft:arrow"
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.25
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "lightningBolt"
+	},
+	"condition": {
+		"type": "origins:advancement",
+		"advancement": "minecraft:arcanite/thaumaturge"
+	},
+	"hidden": true
+}

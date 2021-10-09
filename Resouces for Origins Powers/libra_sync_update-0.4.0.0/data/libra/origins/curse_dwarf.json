@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"libra:curse_dwarf_callback",
+		"libra:curse_dwarf_weak",
+		"libra:curse_dwarf_jumps",
+		"libra:curse_dwarf_speed",
+		"libra:curse_bad_luck",
+		"libra:curse_cure",
+		"libra:curse_death_remove",
+		"libra:curse_tablet_use",
+		"libra:curse_tablet_reiteration"
+	],
+	"icon": {
+		"item": "minecraft:iron_pickaxe",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+  "name": "Dwarf's Curse",
+  "description": "A Libra has cursed you! You are half a block tall and you feel weaker than usual."
+}
+//Umena says hi

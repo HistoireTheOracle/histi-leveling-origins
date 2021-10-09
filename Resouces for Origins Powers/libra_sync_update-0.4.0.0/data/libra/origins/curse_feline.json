@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"origins:weak_arms",
+		"libra:curse_bad_luck",
+		"libra:curse_cure",
+		"libra:curse_death_remove",
+		"libra:curse_tablet_use",
+		"libra:curse_tablet_reiteration"
+	],
+	"icon": {
+		"item": "minecraft:light_blue_wool",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 1,
+  "name": "Feline's Curse",
+  "description": "A Libra has cursed you! Stone feels a lot harder..."
+}
+//Umena says hi

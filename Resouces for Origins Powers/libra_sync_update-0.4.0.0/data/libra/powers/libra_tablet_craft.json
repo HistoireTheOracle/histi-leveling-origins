@@ -1,0 +1,79 @@
+{
+  "type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [ 
+			{
+			  "type": "origins:execute_command",
+			  "command": "playsound minecraft:block.smithing_table.use master @p[distance=..5] ~ ~ ~ 5 1 0.8",
+			  "permission_level": 4
+			},
+			{
+			  "type": "origins:execute_command",
+			  "command": "playsound minecraft:block.grindstone.use master @p[distance=..5] ~ ~ ~ 5 1 1",
+			  "permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "effect give @s minecraft:nausea 5 0 true",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Empty Tablet\",\"color\":\"white\",\"bold\":false}',Lore:['{\"text\":\"This tablet is mundane\",\"color\":\"white\"}','{\"text\":\"and holds no power.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:2}}}",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "clear @s minecraft:quartz_block 1",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "clear @s minecraft:ghast_tear 1",
+				"permission_level": 4
+			}
+		]
+	},
+  "interval": 40,
+  "condition": {
+        "type": "origins:and",
+        "conditions": [
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:block",
+					"block": "minecraft:grindstone"
+				},
+				"radius": 2
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "offhand",
+				"item_condition": 
+					{
+						"type": "origins:ingredient",
+						"ingredient": 
+							{
+								"item": "minecraft:ghast_tear"
+							}
+					}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": 
+					{
+						"type": "origins:ingredient",
+						"ingredient": 
+							{
+								"item": "minecraft:quartz_block"
+							}
+					}
+			}
+		]
+	},
+  "name": "Sculpt tablet",
+  "description": "Holding a quartz block in your main hand and some ghast tears in your offhand by a grindstone allows you to produce empty tablets."
+}
+//Umena says hi

@@ -1,0 +1,80 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"target_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:entity_type",
+				"entity_type": "minecraft:wolf"
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:equipped_item",
+				 "equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "libra:chestplates"
+					}
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"ingredient":
+					{
+						"item": "minecraft:air"
+					}
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"ingredient":
+					{
+						"item": "minecraft:netherite_ingot"
+					}
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"ingredient":
+					{
+						"item": "minecraft:golden_apple"
+					}
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"ingredient":
+					{
+						"item": "minecraft:enchanted_golden_apple"
+					}
+				}
+			}
+		]
+	},
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -0.99
+	},
+	"hidden": true
+}

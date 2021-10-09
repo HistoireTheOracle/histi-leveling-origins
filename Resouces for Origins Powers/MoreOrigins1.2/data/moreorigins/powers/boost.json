@@ -1,0 +1,17 @@
+{
+    "type": "origins:launch",
+    "name": "Lift Off",
+    "description": "With a flap of your wings you can lift off of the ground, or continuously stay in the air",
+    "cooldown": 135,
+    "hud_render": {
+        "bar_index": 4
+    },
+    "sound": "minecraft:entity.parrot.fly",
+    "speed": 1.15,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    },
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 24
+}

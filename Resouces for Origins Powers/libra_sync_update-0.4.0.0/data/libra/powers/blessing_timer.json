@@ -1,0 +1,71 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 1000,
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:resource",
+							"comparison": ">",
+							"resource": "libra:blessing_resource_duration",
+							"compare_to": 1
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:change_resource",
+							"resource": "libra:blessing_resource_duration",
+							"change": -1
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:resource",
+							"comparison": "==",
+							"resource": "libra:blessing_resource_duration",
+							"compare_to": 1
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:entity.wither.death master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "title @s actionbar {\"text\":\"The blessing vanishes...\",\"bold\":true,\"color\":\"dark_red\"}",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @e[type=player,distance=..5] run particle flash",
+							"permission_level": 4
+						}
+					]
+				}
+			}
+		]
+	},
+	"hidden": true
+}

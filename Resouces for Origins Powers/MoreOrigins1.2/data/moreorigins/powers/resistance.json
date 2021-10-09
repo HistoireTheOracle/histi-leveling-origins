@@ -1,0 +1,16 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -20,
+    "max_stacks": 361,
+    "duration_per_stack": 10000,
+    "effects": [
+        {
+            "effect": "minecraft:resistance",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ],
+    "name": "Shell",
+    "description": "You have resistance and extra armor."
+}

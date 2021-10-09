@@ -1,0 +1,28 @@
+{
+	"powers": [
+		"origins:water_breathing",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:swim_speed",
+		"origins:like_water",
+		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"libra:merling_air_from_potions",
+		"libra:merling_callback",
+		"libra:merling_rain_damage",
+		"libra:merling_dash",
+		"libra:merling_heart_of_sea",
+		"libra:merling_stormcaller",
+		"libra:merling_taunt"
+	],
+	"icon": {
+		"item": "minecraft:cod",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+  "name": "Libra's Merling",
+  "description": "Nice weather, huh?"
+}
+//Umena says hi

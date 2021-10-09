@@ -1,0 +1,25 @@
+{
+    "type": "origins:conditioned_restrict_armor",
+    "name": "XXXL",
+    "description": "It is rather hard to find a suit of armour in size XXXL. As a result, ogres cannot wear armour.",
+    "head": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "chest": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "legs": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "feet": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
+    }
+}

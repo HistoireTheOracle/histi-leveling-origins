@@ -1,0 +1,35 @@
+{
+	"powers": [
+		"origins:shulker_inventory",
+		"origins:natural_armor",
+		"origins:strong_arms",
+		"origins:strong_arms_break_speed",
+		"origins:no_shield",
+		"origins:more_exhaustion",
+		"libra:shulk_callback",
+		"libra:shulk_hiding",
+		"libra:shulk_resource_hiding",
+		"libra:shulk_hide_tick_timer",
+		"libra:shulk_hiding_trigger",
+		"libra:shulk_bonk",
+		"libra:shulk_bonk_self",
+		"libra:shulk_shielded_weakness",
+		"libra:shulk_hide_shell",
+		"libra:shulk_taunt",
+		"libra:shulk_hide_kbres",
+		"libra:shulk_shielded_nojump",
+		"libra:shulk_hide_projectiles",
+		"libra:shulk_shielded_slowness",
+		"libra:shulk_closed_vision"
+	],
+	"icon": {
+		"item": "minecraft:shulker_shell",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"unchoosable": true,
+	"order": 10,
+	"impact": 3,
+  "name": "Libra's Shulk",
+  "description": "Truly unbreakable."
+}
+//Umena says hi

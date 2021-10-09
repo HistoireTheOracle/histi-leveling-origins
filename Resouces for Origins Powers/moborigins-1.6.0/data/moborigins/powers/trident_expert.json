@@ -1,0 +1,37 @@
+{
+  "type": "apoli:multiple",
+  "trident_melee": {
+    "type": "apoli:modify_damage_dealt",
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "item": "minecraft:trident"
+        }
+      }
+    },
+    "modifier": {
+      "name": "Extra Trident Damage",
+      "operation": "addition",
+      "value": 2.0
+    }
+  },
+  "trident_thrown": {
+    "type": "apoli:modify_damage_dealt",
+    "damage_condition": {
+      "type": "apoli:projectile",
+      "projectile": "minecraft:trident"
+    },
+    "modifier": {
+      "name": "Extra Trident Damage",
+      "operation": "addition",
+      "value": 2.0
+    }
+  },
+  "riptide_power": {
+    "type": "moborigins:riptide_override",
+    "trident_damage": "10"
+  }
+}

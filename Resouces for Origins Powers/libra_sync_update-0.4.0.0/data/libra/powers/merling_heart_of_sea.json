@@ -1,0 +1,41 @@
+{
+    "type": "origins:recipe",
+    "hidden": true,
+    "recipe": {
+		"id": "hexblade:hexblade_shells",
+		"type": "minecraft:crafting_shapeless",
+		"ingredients": [
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:prismarine_shard"
+			},
+			{
+			  "item": "minecraft:ender_pearl"
+			}
+		],
+		"result": {
+			"item": "minecraft:heart_of_the_sea",
+			"count": 1
+		}
+    }
+}

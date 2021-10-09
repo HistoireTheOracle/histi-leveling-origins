@@ -1,0 +1,13 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "value": -0.02,
+        "operation": "addition"
+    },
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "name": "Unnatural",
+    "description": "Due to being used to the void, sunlight will weaken you."
+}

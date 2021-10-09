@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Master",
+            "color": "gold",
+            "italic": false
+        },
+        "description": {
+            "text": "Claim Level 100 and Become A Master of the Arcanum"
+        },
+        "icon": {
+            "item": "minecraft:nether_star"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "arcanite:thaumaturge"
+}

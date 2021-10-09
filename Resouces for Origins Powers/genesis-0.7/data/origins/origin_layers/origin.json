@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "origins": [
+    "genesis:golem",
+    "genesis:ghastling",
+    "genesis:silverfish",
+    "genesis:arcanite",
+    "genesis:dragonkin"
+  ]
+}

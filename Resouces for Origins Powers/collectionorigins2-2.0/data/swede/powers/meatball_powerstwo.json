@@ -1,0 +1,30 @@
+{
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+		{
+			"effect": "minecraft:strength",
+			"duration":600,
+		"amplifier":1},
+		{
+			"effect": "minecraft:haste",
+			"duration":600,
+		"amplifier":1},
+		{
+		"effect": "minecraft:night_vision",
+			"duration":600,
+		"amplifier":0}
+	]
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:cooked_beef"
+        }
+    },
+  "name": "Ultra Meatball Powers",
+  "description": "Some of those upsides include giving you both mental and physical power."
+
+  }
+  

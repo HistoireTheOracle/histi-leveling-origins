@@ -1,0 +1,13 @@
+{
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:name",
+	"name": "explosion"
+  },
+  "modifier": {
+    "value": 2,
+    "operation": "multiply_total"
+  },
+  "name": "Squishy",
+  "description": "All forms of blast damage deals 2x the damage."
+}

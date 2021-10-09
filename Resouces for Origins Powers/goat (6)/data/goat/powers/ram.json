@@ -1,0 +1,21 @@
+{
+    "type": "origins:active_self",
+    "name": "Leap",
+    "description": "You can use your primary to use a huge leap",
+    "cooldown": 200,
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "space": "local",
+        "set": false,
+        "z": 2
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 20
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

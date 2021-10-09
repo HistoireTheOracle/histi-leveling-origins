@@ -1,0 +1,9 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.attack_knockback",
+    "operation": "addition",
+    "value": "5.0"
+  },
+  "hidden": true
+}

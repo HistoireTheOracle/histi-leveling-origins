@@ -1,0 +1,23 @@
+{
+	"type": "origins:walk_on_fluid",
+	"fluid": "minecraft:water",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:submerged_in",
+				"fluid": "minecraft:water",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking",
+				"inverted": true
+			},
+			{
+				"type": "origins:sprinting",
+				"inverted": true
+			}
+		]
+	},
+	"hidden": true
+}

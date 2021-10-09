@@ -1,0 +1,21 @@
+{
+  "type": "origins:modify_break_speed",
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:air"
+      }
+    }
+  },
+  "modifier": {
+    "value": 0.06,
+    "operation": "addition"
+  },
+  "hidden": false,
+
+  "name": "§2Strong",
+  "description": "Your immense arms are capable of crushing stone, and are faster at breaking any block."
+}

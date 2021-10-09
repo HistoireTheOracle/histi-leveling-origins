@@ -1,0 +1,14 @@
+{
+    "powers": [
+      "smp:overpowered",
+      "smp:morehealth",
+      "smp:explode",
+	  "smp:flight"
+
+    ],
+    "icon": "minecraft:beacon",
+    "order": 10,
+    "impact": 3,
+    "name": "Blood God",
+    "description": "\"Welcome Home, Theseus\""
+}

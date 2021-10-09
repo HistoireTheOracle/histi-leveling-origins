@@ -1,0 +1,25 @@
+{
+    "powers": [
+        "simplymob:ghast_health",
+        "origins:nether_spawn",
+        "origins:no_shield",
+        "origins:more_exhaustion",
+        "origins:fire_immunity",
+        "simplymob:no_sleep2",
+        "simplymob:fireball",
+        "origins:translucent",
+        "origins:hotblooded",
+        "origins:water_vulnerability",
+        "simplymob:ghast_sounds",
+        "simplymob:flight",
+        "origins:slow_falling",
+        "simplymob:ghast_size",
+        "simplymob:ghast_size2"
+
+
+    ],
+    "icon": "minecraft:ghast_tear",
+    "impact": 2,
+    "name": "Ghast",
+    "description": "Ghast Giants of the Nether"
+}

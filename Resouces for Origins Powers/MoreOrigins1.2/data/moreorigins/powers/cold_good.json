@@ -1,0 +1,10 @@
+{
+    "name": "Winter Inhabitant",
+    "description": "You spawn in tiga biomes and are slightly faster there.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "value": 0.02,
+        "operation": "addition"
+    }
+}

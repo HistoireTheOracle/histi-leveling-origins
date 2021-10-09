@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"libra:curse_pride",
+		"libra:curse_bad_luck",
+		"libra:curse_cure",
+		"libra:curse_death_remove",
+		"libra:curse_tablet_use",
+		"libra:curse_tablet_reiteration"
+	],
+	"icon": {
+		"item": "minecraft:totem_of_undying",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+  "name": "Curse of Pride",
+  "description": "A Libra has cursed you! You are prideful and don't see a need to prove yourself to the weak. [Brought to you by BenHotLava]"
+}
+//Ben says hi

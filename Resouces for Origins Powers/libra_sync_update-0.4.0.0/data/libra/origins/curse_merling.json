@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"origins:water_breathing",
+		"origins:air_from_potions",
+		"libra:curse_bad_luck",
+		"libra:merling_curse_water_damage",
+		"libra:curse_cure",
+		"libra:curse_death_remove",
+		"libra:curse_tablet_use",
+		"libra:curse_tablet_reiteration"
+	],
+	"icon": {
+		"item": "minecraft:pufferfish",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+  "name": "Merling's Curse",
+  "description": "A Libra has cursed you! You can only breathe in water, but water can't hurt you."
+}
+//Umena says hi

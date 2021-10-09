@@ -1,0 +1,29 @@
+{
+	"type": "origins:conditioned_attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.attack_damage",
+		"value": -0.99,
+		"operation": "multiply_base"
+	},
+	"condition":
+	{
+		"type": "origins:and",
+		"conditions":
+		[
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition":
+				{
+					"type": "origins:ingredient",
+					"inverted": true,
+						"ingredient":{
+							"tag": "libra:hoes"
+						}
+				}
+			}
+		]
+	},
+	"name": "Field Defender",
+	"description": "You can only deal damage using hoes."
+}

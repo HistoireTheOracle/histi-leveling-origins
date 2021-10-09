@@ -1,0 +1,13 @@
+{
+    "type": "origins:burn",
+    "condition": {
+        "type": "origins:dimension",
+        "inverted": false,
+        "dimension": "minecraft:overworld"
+    },
+    "interval": 20,
+    "burn_duration": 1,
+    "name": "Overworld Burn",
+    "description": "When you are in the overworld you will start to burn because there is skyligh. ",
+    "hidden": false
+}

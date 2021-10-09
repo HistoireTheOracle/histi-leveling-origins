@@ -1,0 +1,3514 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 20,
+	"hud_render": {
+	  "should_render":false,
+	  "sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+	  "bar_index": 1
+	},
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_bladeborn",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:4}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_charisma",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:5}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_constitution",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:6}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_dexterity",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:7}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_enderian",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:8}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_hexblade",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:9}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_humanity",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:10}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_revenant",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:11}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_sylvan",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:12}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_arachnid",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:13}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_avian",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:14}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_blazeborn",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:15}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_covid",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:16}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_dwarf",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:17}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_elytrian",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:18}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_enderian",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:19}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_feline",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:20}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_giant",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:21}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_golem",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:22}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_libra",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:23}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_merling",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:24}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_myconoid",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:25}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_nature",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:26}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_phantom",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:27}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_pride",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:28}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_shulk",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:29}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_villager",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:30}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_witchling",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:31}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:curse_breathing",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Cursed Tablet\",\"color\":\"light_purple\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"negative energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:32}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 3
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:command",
+							"command": "data get entity @s SelectedItem.tag.CustomModelData",
+							"comparison": "==",
+							"compare_to": 2
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": false,
+								"ingredient":
+								{
+									"item": "minecraft:bowl"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition":
+							{
+								"type": "origins:ingredient",
+								"inverted": true,
+								"ingredient":
+								{
+									"item": "minecraft:stick"
+								}
+							}
+						},
+						{
+							"type": "origins:origin",
+							"layer": "origins:curses",
+							"origin": "libra:blessing_necromancer",
+							"inverted": false
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "playsound minecraft:block.beacon.ambient master @a[distance=..5] ~ ~ ~ 2 2",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "execute at @s at @s run particle flash",
+							"permission_level": 4
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:curses libra:curse_none",
+							"permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "resource set @s libra:blessing_resource_duration 24",
+						  "permission_level": 4
+						},
+						{
+						  "type": "origins:execute_command",
+						  "command": "clear @s minecraft:bowl{CustomModelData: 2} 1",
+						  "permission_level": 4
+						},
+						{
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet absorbs your energy...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "summon item ~ ~ ~ {Glowing:1b,Item:{id:\"minecraft:bowl\",Count:1b,tag:{display:{Name:'{\"text\":\"Blessed Tablet\",\"color\":\"yellow\",\"bold\":false}',Lore:['{\"text\":\"The tablet radiates\",\"color\":\"white\"}','{\"text\":\"positive energy.\",\"color\":\"white\"}']},HideFlags:122,Unbreakable:1b,CustomModelData:33}}}",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								},
+								{
+									"element": {
+										"type": "origins:and",
+										"actions": [
+											{
+												"type": "origins:execute_command",
+												"command": "tellraw @s {\"text\":\"The tablet shatters...\",\"bold\":true,\"color\":\"white\"}",
+												"permission_level": 4
+											},
+											{
+												"type": "origins:execute_command",
+												"command": "playsound minecraft:entity.item.break master @a[distance=..5] ~ ~ ~ 2 2",
+												"permission_level": 4
+											}
+										]
+									},
+									"weight": 1
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	},
+	"condition":
+	{
+		"type": "origins:and",
+		"conditions":
+		[
+			{
+				"type": "origins:origin",
+				"origin": "libra:libra",
+				"inverted": true
+			},
+			{
+				"type": "origins:sneaking"
+			}
+		]
+	},
+	"hidden": true,	
+	"key": {
+		"key":"key.use",
+		"continuous": false
+	}
+}

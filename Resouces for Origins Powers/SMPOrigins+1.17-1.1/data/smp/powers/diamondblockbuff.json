@@ -1,0 +1,29 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -20,
+    "max_stacks": 10,
+    "duration_per_stack": 10,
+    "effects": [
+        {
+            "effect": "minecraft:speed",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:strength",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:diamond_block"
+        }
+    },
+    "name": "On Diamonds",
+    "description": "Standing on diamond blocks will give you a boost in speed strength and health."
+}

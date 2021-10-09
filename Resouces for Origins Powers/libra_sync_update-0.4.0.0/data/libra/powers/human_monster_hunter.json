@@ -1,0 +1,88 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"target_condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:entity_type",
+				"entity_type": "minecraft:player",
+				"inverted": true
+			},
+			{
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:entity_type",
+						"entity_type": "minecraft:player"
+					},
+					{
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:origin",
+								"origin": "origins:avian",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "origins:merling",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "origins:feline",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "origins:human",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "mightybird:shoebill",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "elder_guardian:accurate_villager",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "libra:libra_avian",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "libra:libra_human",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "libra:libra_feline",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "libra:libra_merling",
+								"inverted": true
+							},
+							{
+								"type": "origins:origin",
+								"origin": "libra:libra",
+								"inverted": true
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"modifier": {
+		"operation": "multiply_total",
+		"value": 0.5
+	},
+	"name": "Monster Hunter",
+	"description": "You deal 50% more damage to mobs, monster based origins or origins that you don't know. You take 10% less damage from all sources, you are 10% faster and you have 10% more max health."
+}

@@ -1,0 +1,1 @@
+{"schemaVersion": 1, "authors": ["Commander_Why"], "environment": "*", "depends": {"fabric-api-base": "*"}, "name": "A Moth Origin", "id": "mothorigin", "version": "2.0", "description": "", "license": "Public Domain"}

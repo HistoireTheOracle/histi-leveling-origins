@@ -1,0 +1,8 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:wither"
+    ],
+    "name": "Ungodly Allies",
+    "description": "Used to the powers of the Nether, you are immune to the Wither effect."
+}

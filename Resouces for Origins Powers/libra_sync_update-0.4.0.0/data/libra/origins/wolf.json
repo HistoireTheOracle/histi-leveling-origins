@@ -1,0 +1,26 @@
+{
+	"powers": [
+		"origins:carnivore",
+		"libra:wolf_damage_down",
+		"libra:wolf_health",
+		"libra:wolf_callback",
+		"libra:wolf_taunt",
+		"libra:wolf_pack_attack",
+		"libra:wolf_dog_vision",
+		"libra:wolf_ticks",
+		"libra:wolf_bonus_a",
+		"libra:wolf_projectiles",
+		"libra:wolf_alpha_chestplate",
+		"libra:wolf_primary_active"
+	],
+	"icon": {
+		"item": "minecraft:bone",
+		"tag": "{CustomModelData:1}"
+	},
+	"unchoosable": false,
+	"order": 10,
+	"impact": 2,
+  "name": "Canine",
+  "description": "Loyal and reliable, the canine is a carnivore that will always protect its friends, and who can call upon those friends to protect itself."
+}
+//Umena says hi

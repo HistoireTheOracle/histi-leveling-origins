@@ -1,0 +1,26 @@
+{
+    "type": "origins:stacking_status_effect",
+    "name": "Wool coat",
+    "description": "You are slow in hot biomes",
+    "condition": {
+        "type": "origins:biome",
+        "inverted": false,
+        "condition": {
+            "type": "origins:temperature",
+            "inverted": true,
+            "comparison": "<",
+            "compare_to": 0.95
+        }
+    },
+    "min_stacks": 0,
+    "max_stacks": 10,
+    "duration_per_stack": 10,
+    "effect": {
+        "duration": 10,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": true,
+        "effect": "slowness",
+        "amplifier": 1
+    }
+}

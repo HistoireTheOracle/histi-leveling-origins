@@ -1,0 +1,58 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 40,
+	"entity_action": {
+		"type": "origins:if_else_list",
+		"actions": [
+			{
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:exposed_to_sky"
+						}
+					]
+				},
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:chance",
+							"chance": 0.1,
+							"action":{
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:add_velocity",
+										"y": 2,
+										"space": "world"
+									},
+									{
+									  "type": "origins:execute_command",
+									  "command": "playsound minecraft:item.elytra.flying master @a[distance=..5] ~ ~ ~ 2 0.7",
+									  "permission_level": 4
+									},
+									{
+										"type": "origins:delay",
+										"ticks": 80,
+										"action": {
+											"type": "origins:and",
+											"actions": [ 
+												{
+													"type": "origins:execute_command",
+													"command": "stopsound @a master minecraft:item.elytra.flying",
+													"permission_level": 4
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+	"hidden": true
+}

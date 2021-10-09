@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"libra:blessing_luck",
+		"libra:blessing_timer",
+		"libra:blessing_resource_duration",
+		"libra:blessing_death_remove",
+		"libra:blessing_sylvan_crop",
+		"libra:curse_tablet_use"
+	],
+	"icon": {
+		"item": "minecraft:bone_meal",
+		"tag": "{Enchantments:[{}],CustomModelData:1}"
+	},
+	"order": 10,
+	"impact": 3,
+	"name": "Sylvan's Blessing",
+	"description": "A semblance of a peaceful life from the Sylvan's datapack by CandyCaneCazoo. For a day, you will gain experience from breaking crops. If you are a Sylvan already, this doubles the experience gain. Blessings disappear on death, so be careful!"
+}
+//Umena says hi

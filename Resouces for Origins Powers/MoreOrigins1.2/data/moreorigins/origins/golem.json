@@ -1,0 +1,18 @@
+{
+    "powers": [
+        "moreorigins:strong_arms",
+        "moreorigins:rock_heart",
+        "moreorigins:stone_skin",
+        "moreorigins:stone_skin2",
+        "moreorigins:strong_skin",
+        "moreorigins:heavy",
+        "moreorigins:big",
+        "moreorigins:golem_heavy"
+    ],
+    "icon": "minecraft:iron_block",
+    "order": 4,
+    "impact": 2,
+    "name": "Golem",
+    "description": "You are an iron golem who was given intelligence from an unknown source",
+    "unchoosable": false
+}

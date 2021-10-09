@@ -1,0 +1,24 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:equipped_item",
+				 "equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "libra:melee_weapons"
+					}
+				}
+			}
+		]
+	},
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -0.5
+	},
+	"name": "Wild Fighting Style",
+	"description": "You deal 50% less damage with melee and ranged weapons. Your unarmed strikes are unaffected by this."
+}
