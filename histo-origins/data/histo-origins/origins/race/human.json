@@ -2,9 +2,9 @@
 	"powers": [
 		"histo-origins:powernamehere"
 	],
-	"icon": "minecraft:barrier",
+	"icon": "histo-origins:origin-icons/human-icon.png",
 	"order": 10,
 	"impact": 0,
-	"name": "NAME HERE",
-	"description": "DESCRIPTION HERE"
+	"name": "Human Variant",
+	"description": "Just a push of the ordinary human, but linkable with Histo's Classes"
 }

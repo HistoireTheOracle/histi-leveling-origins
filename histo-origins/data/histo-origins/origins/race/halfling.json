@@ -2,9 +2,9 @@
 	"powers": [
 		"histo-origins:powernamehere"
 	],
-	"icon": "minecraft:barrier",
+	"icon": "histo-origins:origin-icons/halfling-icon.png",
 	"order": 10,
 	"impact": 0,
-	"name": "NAME HERE",
-	"description": "DESCRIPTION HERE"
+	"name": "Halfling",
+	"description": "Quite a small race, known for its caring and outward exterior."
 }

@@ -2,9 +2,9 @@
 	"powers": [
 		"histo-origins:powernamehere"
 	],
-	"icon": "minecraft:barrier",
+	"icon": "histo-origins:origin-icons/elf-icon.png",
 	"order": 10,
 	"impact": 0,
-	"name": "NAME HERE",
-	"description": "DESCRIPTION HERE"
+	"name": "Elf",
+	"description": "Slightly taller race, with an affinity for wooded areas. Their pointed ears make them stick out quite a bit."
 }

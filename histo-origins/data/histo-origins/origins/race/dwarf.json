@@ -2,9 +2,9 @@
 	"powers": [
 		"histo-origins:powernamehere"
 	],
-	"icon": "minecraft:barrier",
+	"icon": "histo-origins:origin-icons/dwarf-icon.png",
 	"order": 10,
 	"impact": 0,
-	"name": "NAME HERE",
-	"description": "DESCRIPTION HERE"
+	"name": "Dwarf",
+	"description": "I am a dwarf and I'm digging a hole... diggy diggy hole, digging a hole."
 }

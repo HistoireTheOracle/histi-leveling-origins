@@ -2,9 +2,9 @@
 	"powers": [
 		"histo-origins:powernamehere"
 	],
-	"icon": "minecraft:barrier",
+	"icon": "histo-origins:origin-icons/orc-icon.png",
 	"order": 10,
-	"impact": 0,
-	"name": "NAME HERE",
-	"description": "DESCRIPTION HERE"
+	"impact": 1,
+	"name": "Orc",
+	"description": "A quite barbaric race, usually known for their massive attack and durability."
 }

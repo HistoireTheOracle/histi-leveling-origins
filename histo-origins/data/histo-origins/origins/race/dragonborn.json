@@ -2,9 +2,9 @@
 	"powers": [
 		"histo-origins:powernamehere"
 	],
-	"icon": "minecraft:barrier",
+	"icon": "histo-origins:origin-icons/dragonborn-icon.png",
 	"order": 10,
 	"impact": 0,
-	"name": "NAME HERE",
-	"description": "DESCRIPTION HERE"
+	"name": "Dragonborn",
+	"description": "Amcient race born from dragons and humans. Somehow that bard did slay the dragon, in a way you wouldn't expect."
 }
