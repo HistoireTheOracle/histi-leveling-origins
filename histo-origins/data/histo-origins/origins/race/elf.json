@@ -1,6 +1,11 @@
 {
 	"powers": [
-		"histo-origins:powernamehere"
+		"histo-origins:elven-height",
+		"histo-origins:forest-affinity",
+		"histo-origins:enhanced-alertness",
+		"histo-origins:darkvision",
+		"histo-origins:nine-hearts",
+		"histo-origins:no-questions-axed"
 	],
 	"icon": "histo-origins:origin-icons/elf-icon.png",
 	"order": 10,

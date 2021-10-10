@@ -1,6 +1,14 @@
 {
 	"powers": [
-		"histo-origins:powernamehere"
+		"histo-origins:dwarven-stature",
+		"histo-origins:forge-armor",
+		"histo-origins:dwarven-commissions",
+		"histo-origins:dwarfs-mining-prowess-dummy",
+		"histo-origins:faster-pickaxes",
+		"histo-origins:mining-fatique-immunity",
+		"histo-origins:hold-their-liquor",
+		"histo-origins:hobbled-feet",
+		"histo-origins:stonecarving-master"
 	],
 	"icon": "histo-origins:origin-icons/dwarf-icon.png",
 	"order": 10,
